@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.username_box = new System.Windows.Forms.TextBox();
             this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.register_label = new System.Windows.Forms.Label();
             this.sign_up_button = new System.Windows.Forms.Button();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // username_box
@@ -135,6 +137,11 @@
             this.sign_up_button.Text = "Sign Up!";
             this.sign_up_button.UseVisualStyleBackColor = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,6 +176,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label register_label;
         private System.Windows.Forms.Button sign_up_button;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 
