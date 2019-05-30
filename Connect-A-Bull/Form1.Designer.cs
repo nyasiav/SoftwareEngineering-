@@ -50,7 +50,7 @@
             // 
             // login_button
             // 
-            this.login_button.Location = new System.Drawing.Point(455, 358);
+            this.login_button.Location = new System.Drawing.Point(678, 410);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(94, 32);
             this.login_button.TabIndex = 2;
@@ -62,6 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(214)))), ((int)(((byte)(190)))));
             this.label1.Location = new System.Drawing.Point(316, 270);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 23);
@@ -73,6 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(214)))), ((int)(((byte)(190)))));
             this.label2.Location = new System.Drawing.Point(316, 315);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 23);
