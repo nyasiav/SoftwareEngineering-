@@ -51,5 +51,10 @@ namespace Connect_A_Bull
         {
 
         }
+
+        private void Register_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
