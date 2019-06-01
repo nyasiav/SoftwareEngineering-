@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ln_txtnox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.register_btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.exit_btn = new System.Windows.Forms.Label();
             this.minimize_btn = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // ln_txtnox
@@ -225,6 +227,11 @@
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,7 +255,9 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "register_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +278,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton register_btn;
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Label minimize_btn;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

@@ -93,5 +93,10 @@ namespace Connect_A_Bull
         {
             Application.Exit();
         }
+
+        private void Login_page_Load(object sender, EventArgs e)
+        {
+            name_box.Focus();
+        }
     }
 }

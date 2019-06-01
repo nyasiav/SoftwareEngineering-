@@ -26,5 +26,10 @@ namespace Connect_A_Bull
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Register_form_Load(object sender, EventArgs e)
+        {
+            fn_txtbox.Select();
+        }
     }
 }
