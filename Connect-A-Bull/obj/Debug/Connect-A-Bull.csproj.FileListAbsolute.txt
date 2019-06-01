@@ -20,3 +20,15 @@ C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-B
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CopyComplete
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe.config
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.pdb
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Dashboard.resources
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.login_page.resources
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Properties.Resources.resources
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.GenerateResource.cache
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CoreCompileInputs.cache
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CopyComplete
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.exe
+C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb

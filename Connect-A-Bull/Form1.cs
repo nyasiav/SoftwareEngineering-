@@ -56,5 +56,12 @@ namespace Connect_A_Bull
         {
 
         }
+
+        private void Dash_test_Click(object sender, EventArgs e)
+        {
+            var newDash = new Dashboard();
+
+            newDash.Show();
+        }
     }
 }
