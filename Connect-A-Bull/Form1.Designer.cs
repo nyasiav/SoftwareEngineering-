@@ -43,13 +43,17 @@
             // 
             // login_button
             // 
+            this.login_button.BackColor = System.Drawing.Color.DarkCyan;
+            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_button.Location = new System.Drawing.Point(689, 482);
+            this.login_button.ForeColor = System.Drawing.Color.Transparent;
+            this.login_button.Location = new System.Drawing.Point(477, 390);
+            this.login_button.Margin = new System.Windows.Forms.Padding(2);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(94, 32);
+            this.login_button.Size = new System.Drawing.Size(70, 26);
             this.login_button.TabIndex = 2;
-            this.login_button.Text = "Login!";
-            this.login_button.UseVisualStyleBackColor = true;
+            this.login_button.Text = "Login";
+            this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
@@ -58,9 +62,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label1.Location = new System.Drawing.Point(512, 393);
+            this.label1.Location = new System.Drawing.Point(384, 319);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 23);
+            this.label1.Size = new System.Drawing.Size(82, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -71,9 +76,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label2.Location = new System.Drawing.Point(512, 441);
+            this.label2.Location = new System.Drawing.Point(384, 358);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 23);
+            this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
@@ -83,9 +89,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label3.Location = new System.Drawing.Point(655, 398);
+            this.label3.Location = new System.Drawing.Point(491, 323);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 5;
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
@@ -94,9 +101,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label4.Location = new System.Drawing.Point(654, 442);
+            this.label4.Location = new System.Drawing.Point(490, 359);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 7;
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
@@ -104,24 +112,29 @@
             // 
             this.register_label.AutoSize = true;
             this.register_label.BackColor = System.Drawing.Color.Transparent;
-            this.register_label.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.register_label.Location = new System.Drawing.Point(512, 661);
+            this.register_label.Location = new System.Drawing.Point(384, 451);
+            this.register_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.register_label.Name = "register_label";
-            this.register_label.Size = new System.Drawing.Size(384, 19);
+            this.register_label.Size = new System.Drawing.Size(135, 15);
             this.register_label.TabIndex = 8;
-            this.register_label.Text = "Don\'t have an account? Click here to sign up!";
+            this.register_label.Text = "Don\'t have an account?";
             this.register_label.Click += new System.EventHandler(this.Register_label_Click);
             // 
             // sign_up_button
             // 
+            this.sign_up_button.BackColor = System.Drawing.Color.ForestGreen;
+            this.sign_up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sign_up_button.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign_up_button.Location = new System.Drawing.Point(660, 693);
+            this.sign_up_button.ForeColor = System.Drawing.Color.Transparent;
+            this.sign_up_button.Location = new System.Drawing.Point(563, 446);
+            this.sign_up_button.Margin = new System.Windows.Forms.Padding(2);
             this.sign_up_button.Name = "sign_up_button";
-            this.sign_up_button.Size = new System.Drawing.Size(99, 42);
+            this.sign_up_button.Size = new System.Drawing.Size(70, 26);
             this.sign_up_button.TabIndex = 9;
-            this.sign_up_button.Text = "Sign Up!";
-            this.sign_up_button.UseVisualStyleBackColor = true;
+            this.sign_up_button.Text = "Sign Up";
+            this.sign_up_button.UseVisualStyleBackColor = false;
             // 
             // bunifuElipse1
             // 
@@ -130,26 +143,34 @@
             // 
             // name_box
             // 
-            this.name_box.Location = new System.Drawing.Point(637, 393);
+            this.name_box.BackColor = System.Drawing.Color.Gainsboro;
+            this.name_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.name_box.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.Location = new System.Drawing.Point(478, 324);
+            this.name_box.Margin = new System.Windows.Forms.Padding(2);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(172, 22);
+            this.name_box.Size = new System.Drawing.Size(130, 15);
             this.name_box.TabIndex = 10;
             // 
             // pass_box
             // 
-            this.pass_box.Location = new System.Drawing.Point(637, 437);
+            this.pass_box.BackColor = System.Drawing.Color.Gainsboro;
+            this.pass_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pass_box.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass_box.Location = new System.Drawing.Point(478, 359);
+            this.pass_box.Margin = new System.Windows.Forms.Padding(2);
             this.pass_box.Name = "pass_box";
-            this.pass_box.Size = new System.Drawing.Size(172, 22);
+            this.pass_box.Size = new System.Drawing.Size(130, 15);
             this.pass_box.TabIndex = 11;
             // 
             // login_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.Controls.Add(this.pass_box);
             this.Controls.Add(this.name_box);
             this.Controls.Add(this.sign_up_button);
@@ -161,6 +182,7 @@
             this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "login_page";
             this.Text = "Login";
             this.ResumeLayout(false);
