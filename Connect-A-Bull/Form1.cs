@@ -66,5 +66,17 @@ namespace Connect_A_Bull
         {
 
         }
+
+        private void Sign_up_button_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Sign_up_button_Click_1(object sender, EventArgs e)
+        {
+            register_form reg_form = new register_form();
+            reg_form.Show();
+
+        }
     }
 }

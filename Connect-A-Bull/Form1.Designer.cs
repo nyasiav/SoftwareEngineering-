@@ -29,32 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.login_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.register_label = new System.Windows.Forms.Label();
-            this.sign_up_button = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.name_box = new System.Windows.Forms.TextBox();
             this.pass_box = new System.Windows.Forms.TextBox();
+            this.login_button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.sign_up_button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
-            // 
-            // login_button
-            // 
-            this.login_button.BackColor = System.Drawing.Color.DarkCyan;
-            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_button.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_button.ForeColor = System.Drawing.Color.Transparent;
-            this.login_button.Location = new System.Drawing.Point(477, 390);
-            this.login_button.Margin = new System.Windows.Forms.Padding(2);
-            this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(70, 26);
-            this.login_button.TabIndex = 2;
-            this.login_button.Text = "Login";
-            this.login_button.UseVisualStyleBackColor = false;
-            this.login_button.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
             // 
@@ -62,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label1.Location = new System.Drawing.Point(384, 319);
+            this.label1.Location = new System.Drawing.Point(431, 270);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 18);
@@ -76,7 +61,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label2.Location = new System.Drawing.Point(384, 358);
+            this.label2.Location = new System.Drawing.Point(431, 322);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 18);
@@ -89,7 +74,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label3.Location = new System.Drawing.Point(491, 323);
+            this.label3.Location = new System.Drawing.Point(538, 322);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
@@ -101,7 +86,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label4.Location = new System.Drawing.Point(490, 359);
+            this.label4.Location = new System.Drawing.Point(537, 358);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
@@ -114,27 +99,13 @@
             this.register_label.BackColor = System.Drawing.Color.Transparent;
             this.register_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.register_label.Location = new System.Drawing.Point(384, 451);
+            this.register_label.Location = new System.Drawing.Point(450, 432);
             this.register_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.register_label.Name = "register_label";
             this.register_label.Size = new System.Drawing.Size(135, 15);
             this.register_label.TabIndex = 8;
             this.register_label.Text = "Don\'t have an account?";
             this.register_label.Click += new System.EventHandler(this.Register_label_Click);
-            // 
-            // sign_up_button
-            // 
-            this.sign_up_button.BackColor = System.Drawing.Color.ForestGreen;
-            this.sign_up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sign_up_button.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign_up_button.ForeColor = System.Drawing.Color.Transparent;
-            this.sign_up_button.Location = new System.Drawing.Point(563, 446);
-            this.sign_up_button.Margin = new System.Windows.Forms.Padding(2);
-            this.sign_up_button.Name = "sign_up_button";
-            this.sign_up_button.Size = new System.Drawing.Size(70, 26);
-            this.sign_up_button.TabIndex = 9;
-            this.sign_up_button.Text = "Sign Up";
-            this.sign_up_button.UseVisualStyleBackColor = false;
             // 
             // bunifuElipse1
             // 
@@ -145,23 +116,94 @@
             // 
             this.name_box.BackColor = System.Drawing.Color.Gainsboro;
             this.name_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.name_box.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_box.Location = new System.Drawing.Point(478, 324);
+            this.name_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.Location = new System.Drawing.Point(434, 290);
             this.name_box.Margin = new System.Windows.Forms.Padding(2);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(130, 15);
+            this.name_box.Size = new System.Drawing.Size(167, 19);
             this.name_box.TabIndex = 10;
             // 
             // pass_box
             // 
             this.pass_box.BackColor = System.Drawing.Color.Gainsboro;
             this.pass_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pass_box.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass_box.Location = new System.Drawing.Point(478, 359);
+            this.pass_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass_box.Location = new System.Drawing.Point(434, 342);
             this.pass_box.Margin = new System.Windows.Forms.Padding(2);
             this.pass_box.Name = "pass_box";
-            this.pass_box.Size = new System.Drawing.Size(130, 15);
+            this.pass_box.Size = new System.Drawing.Size(167, 19);
             this.pass_box.TabIndex = 11;
+            // 
+            // login_button
+            // 
+            this.login_button.Activecolor = System.Drawing.Color.DarkCyan;
+            this.login_button.BackColor = System.Drawing.Color.DarkCyan;
+            this.login_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.login_button.BorderRadius = 5;
+            this.login_button.ButtonText = "Login";
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_button.DisabledColor = System.Drawing.Color.Gray;
+            this.login_button.Iconcolor = System.Drawing.Color.Transparent;
+            this.login_button.Iconimage = null;
+            this.login_button.Iconimage_right = null;
+            this.login_button.Iconimage_right_Selected = null;
+            this.login_button.Iconimage_Selected = null;
+            this.login_button.IconMarginLeft = 0;
+            this.login_button.IconMarginRight = 0;
+            this.login_button.IconRightVisible = true;
+            this.login_button.IconRightZoom = 0D;
+            this.login_button.IconVisible = true;
+            this.login_button.IconZoom = 90D;
+            this.login_button.IsTab = false;
+            this.login_button.Location = new System.Drawing.Point(434, 374);
+            this.login_button.Name = "login_button";
+            this.login_button.Normalcolor = System.Drawing.Color.DarkCyan;
+            this.login_button.OnHovercolor = System.Drawing.Color.LightSeaGreen;
+            this.login_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.login_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.login_button.selected = false;
+            this.login_button.Size = new System.Drawing.Size(167, 26);
+            this.login_button.TabIndex = 35;
+            this.login_button.Text = "Login";
+            this.login_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.login_button.Textcolor = System.Drawing.Color.White;
+            this.login_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // sign_up_button
+            // 
+            this.sign_up_button.Activecolor = System.Drawing.Color.LimeGreen;
+            this.sign_up_button.BackColor = System.Drawing.Color.LimeGreen;
+            this.sign_up_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sign_up_button.BorderRadius = 5;
+            this.sign_up_button.ButtonText = "Register";
+            this.sign_up_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sign_up_button.DisabledColor = System.Drawing.Color.Gray;
+            this.sign_up_button.Iconcolor = System.Drawing.Color.Transparent;
+            this.sign_up_button.Iconimage = null;
+            this.sign_up_button.Iconimage_right = null;
+            this.sign_up_button.Iconimage_right_Selected = null;
+            this.sign_up_button.Iconimage_Selected = null;
+            this.sign_up_button.IconMarginLeft = 0;
+            this.sign_up_button.IconMarginRight = 0;
+            this.sign_up_button.IconRightVisible = true;
+            this.sign_up_button.IconRightZoom = 0D;
+            this.sign_up_button.IconVisible = true;
+            this.sign_up_button.IconZoom = 90D;
+            this.sign_up_button.IsTab = false;
+            this.sign_up_button.Location = new System.Drawing.Point(477, 456);
+            this.sign_up_button.Name = "sign_up_button";
+            this.sign_up_button.Normalcolor = System.Drawing.Color.LimeGreen;
+            this.sign_up_button.OnHovercolor = System.Drawing.Color.LawnGreen;
+            this.sign_up_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.sign_up_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sign_up_button.selected = false;
+            this.sign_up_button.Size = new System.Drawing.Size(76, 26);
+            this.sign_up_button.TabIndex = 36;
+            this.sign_up_button.Text = "Register";
+            this.sign_up_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sign_up_button.Textcolor = System.Drawing.Color.White;
+            this.sign_up_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sign_up_button.Click += new System.EventHandler(this.Sign_up_button_Click_1);
             // 
             // login_page
             // 
@@ -171,14 +213,14 @@
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.Controls.Add(this.sign_up_button);
+            this.Controls.Add(this.login_button);
             this.Controls.Add(this.pass_box);
             this.Controls.Add(this.name_box);
-            this.Controls.Add(this.sign_up_button);
             this.Controls.Add(this.register_label);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.login_button);
             this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -191,16 +233,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label register_label;
-        private System.Windows.Forms.Button sign_up_button;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.TextBox pass_box;
         private System.Windows.Forms.TextBox name_box;
+        private Bunifu.Framework.UI.BunifuFlatButton login_button;
+        private Bunifu.Framework.UI.BunifuFlatButton sign_up_button;
     }
 }
 
