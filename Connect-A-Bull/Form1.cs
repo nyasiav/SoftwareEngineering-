@@ -57,11 +57,22 @@ namespace Connect_A_Bull
 
         }
 
+<<<<<<< HEAD
         private void Dash_test_Click(object sender, EventArgs e)
         {
             var newDash = new Dashboard();
 
             newDash.Show();
+=======
+        private void Pass_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuTextbox1_OnTextChange(object sender, EventArgs e)
+        {
+
+>>>>>>> working
         }
     }
 }
