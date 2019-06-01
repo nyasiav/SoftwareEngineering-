@@ -20,3 +20,4 @@ C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-B
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CopyComplete
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Resource1.resources

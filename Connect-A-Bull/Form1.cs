@@ -56,5 +56,15 @@ namespace Connect_A_Bull
         {
 
         }
+
+        private void Pass_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BunifuTextbox1_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
     }
 }
