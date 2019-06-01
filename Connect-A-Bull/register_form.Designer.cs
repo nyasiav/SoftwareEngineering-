@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.email_txtbox = new System.Windows.Forms.TextBox();
             this.register_btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.exit_btn = new System.Windows.Forms.Label();
+            this.minimize_btn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ln_txtnox
@@ -196,6 +198,33 @@
             this.register_btn.Textcolor = System.Drawing.Color.White;
             this.register_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // exit_btn
+            // 
+            this.exit_btn.AutoSize = true;
+            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.ForeColor = System.Drawing.Color.DarkCyan;
+            this.exit_btn.Location = new System.Drawing.Point(1007, 9);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(21, 20);
+            this.exit_btn.TabIndex = 39;
+            this.exit_btn.Text = "X";
+            this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
+            // minimize_btn
+            // 
+            this.minimize_btn.AutoSize = true;
+            this.minimize_btn.BackColor = System.Drawing.Color.Transparent;
+            this.minimize_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimize_btn.ForeColor = System.Drawing.Color.DarkCyan;
+            this.minimize_btn.Location = new System.Drawing.Point(979, 3);
+            this.minimize_btn.Name = "minimize_btn";
+            this.minimize_btn.Size = new System.Drawing.Size(25, 29);
+            this.minimize_btn.TabIndex = 40;
+            this.minimize_btn.Text = "-";
+            this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
+            // 
             // register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +232,8 @@
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.Controls.Add(this.minimize_btn);
+            this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.register_btn);
             this.Controls.Add(this.ln_txtnox);
             this.Controls.Add(this.label2);
@@ -236,5 +267,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox email_txtbox;
         private Bunifu.Framework.UI.BunifuFlatButton register_btn;
+        private System.Windows.Forms.Label exit_btn;
+        private System.Windows.Forms.Label minimize_btn;
     }
 }

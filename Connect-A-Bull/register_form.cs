@@ -16,5 +16,15 @@ namespace Connect_A_Bull
         {
             InitializeComponent();
         }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

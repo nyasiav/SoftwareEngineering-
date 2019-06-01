@@ -78,5 +78,20 @@ namespace Connect_A_Bull
             reg_form.Show();
 
         }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
