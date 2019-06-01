@@ -41,6 +41,7 @@
             this.sign_up_button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.exit_btn = new System.Windows.Forms.Label();
             this.minimize_btn = new System.Windows.Forms.Label();
+            this.test_btn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -49,10 +50,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label1.Location = new System.Drawing.Point(431, 270);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(575, 332);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 18);
+            this.label1.Size = new System.Drawing.Size(103, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -63,10 +63,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label2.Location = new System.Drawing.Point(431, 322);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(575, 396);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
@@ -76,10 +75,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label3.Location = new System.Drawing.Point(538, 322);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(717, 396);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.Size = new System.Drawing.Size(0, 17);
             this.label3.TabIndex = 5;
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
@@ -88,10 +86,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label4.Location = new System.Drawing.Point(537, 358);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(716, 441);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 7;
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
@@ -101,10 +98,9 @@
             this.register_label.BackColor = System.Drawing.Color.Transparent;
             this.register_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.register_label.Location = new System.Drawing.Point(450, 432);
-            this.register_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.register_label.Location = new System.Drawing.Point(600, 532);
             this.register_label.Name = "register_label";
-            this.register_label.Size = new System.Drawing.Size(135, 15);
+            this.register_label.Size = new System.Drawing.Size(168, 17);
             this.register_label.TabIndex = 8;
             this.register_label.Text = "Don\'t have an account?";
             this.register_label.Click += new System.EventHandler(this.Register_label_Click);
@@ -119,10 +115,10 @@
             this.name_box.BackColor = System.Drawing.Color.Gainsboro;
             this.name_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.name_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_box.Location = new System.Drawing.Point(434, 290);
-            this.name_box.Margin = new System.Windows.Forms.Padding(2);
+            this.name_box.Location = new System.Drawing.Point(579, 357);
+            this.name_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(167, 19);
+            this.name_box.Size = new System.Drawing.Size(223, 23);
             this.name_box.TabIndex = 10;
             // 
             // pass_box
@@ -130,10 +126,11 @@
             this.pass_box.BackColor = System.Drawing.Color.Gainsboro;
             this.pass_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pass_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass_box.Location = new System.Drawing.Point(434, 342);
-            this.pass_box.Margin = new System.Windows.Forms.Padding(2);
+            this.pass_box.Location = new System.Drawing.Point(579, 421);
+            this.pass_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pass_box.Name = "pass_box";
-            this.pass_box.Size = new System.Drawing.Size(167, 19);
+            this.pass_box.PasswordChar = '*';
+            this.pass_box.Size = new System.Drawing.Size(223, 23);
             this.pass_box.TabIndex = 11;
             // 
             // login_button
@@ -157,19 +154,21 @@
             this.login_button.IconVisible = true;
             this.login_button.IconZoom = 90D;
             this.login_button.IsTab = false;
-            this.login_button.Location = new System.Drawing.Point(434, 374);
+            this.login_button.Location = new System.Drawing.Point(579, 460);
+            this.login_button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.login_button.Name = "login_button";
             this.login_button.Normalcolor = System.Drawing.Color.DarkCyan;
             this.login_button.OnHovercolor = System.Drawing.Color.LightSeaGreen;
             this.login_button.OnHoverTextColor = System.Drawing.Color.White;
             this.login_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.login_button.selected = false;
-            this.login_button.Size = new System.Drawing.Size(167, 26);
+            this.login_button.Size = new System.Drawing.Size(223, 32);
             this.login_button.TabIndex = 35;
             this.login_button.Text = "Login";
             this.login_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.login_button.Textcolor = System.Drawing.Color.White;
             this.login_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
             // sign_up_button
             // 
@@ -192,14 +191,15 @@
             this.sign_up_button.IconVisible = true;
             this.sign_up_button.IconZoom = 90D;
             this.sign_up_button.IsTab = false;
-            this.sign_up_button.Location = new System.Drawing.Point(477, 456);
+            this.sign_up_button.Location = new System.Drawing.Point(636, 561);
+            this.sign_up_button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.sign_up_button.Name = "sign_up_button";
             this.sign_up_button.Normalcolor = System.Drawing.Color.LimeGreen;
             this.sign_up_button.OnHovercolor = System.Drawing.Color.LawnGreen;
             this.sign_up_button.OnHoverTextColor = System.Drawing.Color.White;
             this.sign_up_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sign_up_button.selected = false;
-            this.sign_up_button.Size = new System.Drawing.Size(76, 26);
+            this.sign_up_button.Size = new System.Drawing.Size(101, 32);
             this.sign_up_button.TabIndex = 36;
             this.sign_up_button.Text = "Register";
             this.sign_up_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,11 +211,13 @@
             // 
             this.exit_btn.AutoSize = true;
             this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit_btn.ForeColor = System.Drawing.Color.DarkCyan;
-            this.exit_btn.Location = new System.Drawing.Point(1007, 9);
+            this.exit_btn.Location = new System.Drawing.Point(1343, 11);
+            this.exit_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(21, 20);
+            this.exit_btn.Size = new System.Drawing.Size(27, 26);
             this.exit_btn.TabIndex = 38;
             this.exit_btn.Text = "X";
             this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
@@ -224,24 +226,38 @@
             // 
             this.minimize_btn.AutoSize = true;
             this.minimize_btn.BackColor = System.Drawing.Color.Transparent;
+            this.minimize_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimize_btn.ForeColor = System.Drawing.Color.DarkCyan;
-            this.minimize_btn.Location = new System.Drawing.Point(979, 3);
+            this.minimize_btn.Location = new System.Drawing.Point(1305, 4);
+            this.minimize_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minimize_btn.Name = "minimize_btn";
-            this.minimize_btn.Size = new System.Drawing.Size(25, 29);
+            this.minimize_btn.Size = new System.Drawing.Size(32, 38);
             this.minimize_btn.TabIndex = 41;
             this.minimize_btn.Text = "-";
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
+            // test_btn
+            // 
+            this.test_btn.AutoSize = true;
+            this.test_btn.BackColor = System.Drawing.Color.Transparent;
+            this.test_btn.Location = new System.Drawing.Point(209, 95);
+            this.test_btn.Name = "test_btn";
+            this.test_btn.Size = new System.Drawing.Size(66, 17);
+            this.test_btn.TabIndex = 42;
+            this.test_btn.Text = "test dash";
+            this.test_btn.Click += new System.EventHandler(this.Test_btn_Click);
+            // 
             // login_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1387, 788);
+            this.Controls.Add(this.test_btn);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.sign_up_button);
@@ -255,7 +271,7 @@
             this.Controls.Add(this.label3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "login_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -278,6 +294,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton sign_up_button;
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Label minimize_btn;
+        private System.Windows.Forms.Label test_btn;
     }
 }
 

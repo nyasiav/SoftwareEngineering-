@@ -16,5 +16,10 @@ namespace Connect_A_Bull
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

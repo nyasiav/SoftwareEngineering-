@@ -98,5 +98,16 @@ namespace Connect_A_Bull
         {
             name_box.Focus();
         }
+
+        private void Login_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Test_btn_Click(object sender, EventArgs e)
+        {
+            Dashboard dash_form = new Dashboard();
+            dash_form.Show();
+        }
     }
 }
