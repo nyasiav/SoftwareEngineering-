@@ -162,5 +162,29 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1_center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2_lime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2_traditional.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
