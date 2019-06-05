@@ -21,5 +21,20 @@ namespace Connect_A_Bull
         {
 
         }
+
+        private void Minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
