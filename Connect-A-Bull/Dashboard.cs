@@ -12,6 +12,11 @@ namespace Connect_A_Bull
 {
     public partial class Dashboard : Form
     {
+
+
+
+        
+
         public Dashboard()
         {
             InitializeComponent();
@@ -19,7 +24,7 @@ namespace Connect_A_Bull
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void Minimize_btn_Click(object sender, EventArgs e)
@@ -33,6 +38,19 @@ namespace Connect_A_Bull
         }
 
         private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calendar_btn_Click(object sender, EventArgs e)
+        {
+            Calendar calander_panel = new Calendar();
+            calander_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(calander_panel);
+            
+        }
+
+        private void Exit_btn_Click_1(object sender, EventArgs e)
         {
 
         }
