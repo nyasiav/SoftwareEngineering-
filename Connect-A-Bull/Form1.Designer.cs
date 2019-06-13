@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.username_label = new System.Windows.Forms.Label();
+            this.pass_label = new System.Windows.Forms.Label();
             this.register_label = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.name_box = new System.Windows.Forms.TextBox();
@@ -41,56 +39,32 @@
             this.sign_up_button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.exit_btn = new System.Windows.Forms.Label();
             this.minimize_btn = new System.Windows.Forms.Label();
-            this.test_btn = new System.Windows.Forms.Label();
+            this.drag_panel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // label1
+            // username_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label1.Location = new System.Drawing.Point(575, 332);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.username_label.AutoSize = true;
+            this.username_label.BackColor = System.Drawing.Color.Transparent;
+            this.username_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.username_label.Location = new System.Drawing.Point(575, 332);
+            this.username_label.Name = "username_label";
+            this.username_label.Size = new System.Drawing.Size(103, 23);
+            this.username_label.TabIndex = 3;
+            this.username_label.Text = "Username";
             // 
-            // label2
+            // pass_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label2.Location = new System.Drawing.Point(575, 396);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label3.Location = new System.Drawing.Point(717, 396);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.label4.Location = new System.Drawing.Point(716, 441);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            this.pass_label.AutoSize = true;
+            this.pass_label.BackColor = System.Drawing.Color.Transparent;
+            this.pass_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.pass_label.Location = new System.Drawing.Point(575, 396);
+            this.pass_label.Name = "pass_label";
+            this.pass_label.Size = new System.Drawing.Size(96, 23);
+            this.pass_label.TabIndex = 4;
+            this.pass_label.Text = "Password";
             // 
             // register_label
             // 
@@ -103,7 +77,6 @@
             this.register_label.Size = new System.Drawing.Size(168, 17);
             this.register_label.TabIndex = 8;
             this.register_label.Text = "Don\'t have an account?";
-            this.register_label.Click += new System.EventHandler(this.Register_label_Click);
             // 
             // bunifuElipse1
             // 
@@ -155,7 +128,7 @@
             this.login_button.IconZoom = 90D;
             this.login_button.IsTab = false;
             this.login_button.Location = new System.Drawing.Point(579, 460);
-            this.login_button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.login_button.Margin = new System.Windows.Forms.Padding(5);
             this.login_button.Name = "login_button";
             this.login_button.Normalcolor = System.Drawing.Color.DarkCyan;
             this.login_button.OnHovercolor = System.Drawing.Color.LightSeaGreen;
@@ -192,7 +165,7 @@
             this.sign_up_button.IconZoom = 90D;
             this.sign_up_button.IsTab = false;
             this.sign_up_button.Location = new System.Drawing.Point(636, 561);
-            this.sign_up_button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.sign_up_button.Margin = new System.Windows.Forms.Padding(5);
             this.sign_up_button.Name = "sign_up_button";
             this.sign_up_button.Normalcolor = System.Drawing.Color.LimeGreen;
             this.sign_up_button.OnHovercolor = System.Drawing.Color.LawnGreen;
@@ -205,7 +178,7 @@
             this.sign_up_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.sign_up_button.Textcolor = System.Drawing.Color.White;
             this.sign_up_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign_up_button.Click += new System.EventHandler(this.Sign_up_button_Click_1);
+            this.sign_up_button.Click += new System.EventHandler(this.Sign_up_button_Click);
             // 
             // exit_btn
             // 
@@ -238,16 +211,16 @@
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
-            // test_btn
+            // drag_panel
             // 
-            this.test_btn.AutoSize = true;
-            this.test_btn.BackColor = System.Drawing.Color.Transparent;
-            this.test_btn.Location = new System.Drawing.Point(209, 95);
-            this.test_btn.Name = "test_btn";
-            this.test_btn.Size = new System.Drawing.Size(66, 17);
-            this.test_btn.TabIndex = 42;
-            this.test_btn.Text = "test dash";
-            this.test_btn.Click += new System.EventHandler(this.Test_btn_Click);
+            this.drag_panel.BackColor = System.Drawing.Color.Transparent;
+            this.drag_panel.Location = new System.Drawing.Point(14, 10);
+            this.drag_panel.Name = "drag_panel";
+            this.drag_panel.Size = new System.Drawing.Size(1284, 44);
+            this.drag_panel.TabIndex = 43;
+            this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
+            this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
+            this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
             // 
             // login_page
             // 
@@ -257,7 +230,7 @@
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1387, 788);
-            this.Controls.Add(this.test_btn);
+            this.Controls.Add(this.drag_panel);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.sign_up_button);
@@ -265,10 +238,8 @@
             this.Controls.Add(this.pass_box);
             this.Controls.Add(this.name_box);
             this.Controls.Add(this.register_label);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pass_label);
+            this.Controls.Add(this.username_label);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -282,10 +253,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label username_label;
+        private System.Windows.Forms.Label pass_label;
         private System.Windows.Forms.Label register_label;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.TextBox pass_box;
@@ -294,7 +263,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton sign_up_button;
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Label minimize_btn;
-        private System.Windows.Forms.Label test_btn;
+        private System.Windows.Forms.Panel drag_panel;
     }
 }
 

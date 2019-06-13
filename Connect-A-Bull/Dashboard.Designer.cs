@@ -41,6 +41,8 @@
             this.dash_container = new System.Windows.Forms.Panel();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Label();
+            this.drag_panel2 = new System.Windows.Forms.Panel();
+            this.drag_panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(132)))));
+            this.panel1.Controls.Add(this.drag_panel);
             this.panel1.Controls.Add(this.settings_btn);
             this.panel1.Controls.Add(this.reminders_btn);
             this.panel1.Controls.Add(this.eval_btn);
@@ -131,7 +134,6 @@
             this.assignments_btn.TabIndex = 2;
             this.assignments_btn.Text = "assignments";
             this.assignments_btn.UseVisualStyleBackColor = true;
-            this.assignments_btn.Click += new System.EventHandler(this.Button2_Click);
             // 
             // calendar_btn
             // 
@@ -189,6 +191,7 @@
             this.minimize_btn.TabIndex = 45;
             this.minimize_btn.Text = "-";
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
             // exit_btn
             // 
@@ -203,7 +206,27 @@
             this.exit_btn.Size = new System.Drawing.Size(27, 26);
             this.exit_btn.TabIndex = 44;
             this.exit_btn.Text = "X";
-            this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click_1);
+            this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
+            // drag_panel2
+            // 
+            this.drag_panel2.Location = new System.Drawing.Point(321, 7);
+            this.drag_panel2.Name = "drag_panel2";
+            this.drag_panel2.Size = new System.Drawing.Size(969, 22);
+            this.drag_panel2.TabIndex = 46;
+            this.drag_panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
+            this.drag_panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
+            this.drag_panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
+            // 
+            // drag_panel
+            // 
+            this.drag_panel.Location = new System.Drawing.Point(12, 7);
+            this.drag_panel.Name = "drag_panel";
+            this.drag_panel.Size = new System.Drawing.Size(303, 22);
+            this.drag_panel.TabIndex = 7;
+            this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
+            this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
+            this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
             // 
             // Dashboard
             // 
@@ -211,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(147)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1387, 788);
+            this.Controls.Add(this.drag_panel2);
             this.Controls.Add(this.dash_container);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.exit_btn);
@@ -220,7 +244,6 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).EndInit();
             this.ResumeLayout(false);
@@ -242,5 +265,7 @@
         private System.Windows.Forms.Panel dash_container;
         private System.Windows.Forms.Label minimize_btn;
         private System.Windows.Forms.Label exit_btn;
+        private System.Windows.Forms.Panel drag_panel;
+        private System.Windows.Forms.Panel drag_panel2;
     }
 }

@@ -13,14 +13,11 @@ namespace Connect_A_Bull
     public partial class Dashboard : Form
     {
 
-
-
-        
-
         public Dashboard()
         {
             InitializeComponent();
         }
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
@@ -37,11 +34,6 @@ namespace Connect_A_Bull
             Application.Exit();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Calendar_btn_Click(object sender, EventArgs e)
         {
             Calendar calander_panel = new Calendar();
@@ -50,9 +42,33 @@ namespace Connect_A_Bull
             
         }
 
-        private void Exit_btn_Click_1(object sender, EventArgs e)
-        {
+        //variables and functions to allow the window to be moved
+        bool drag;
+        int mouse_x, mouse_y;
 
+        private void dragPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag = false;
         }
+
+        private void dragPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drag == true)
+            {
+                this.Left = Cursor.Position.X - mouse_x;
+                this.Top = Cursor.Position.Y - mouse_y;
+
+            }
+        }
+
+        private void dragPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            drag = true;
+            mouse_x = Cursor.Position.X - this.Left;
+            mouse_y = Cursor.Position.Y - this.Top;
+        }
+
+      
+
     }
 }

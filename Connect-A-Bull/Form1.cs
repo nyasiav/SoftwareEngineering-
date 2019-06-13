@@ -17,42 +17,7 @@ namespace Connect_A_Bull
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Username_box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Register_label_Click(object sender, EventArgs e)
         {
 
         }
@@ -62,25 +27,12 @@ namespace Connect_A_Bull
 
         }
 
-        private void BunifuTextbox1_OnTextChange(object sender, EventArgs e)
-        {
-
-        }
-
         private void Sign_up_button_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void Sign_up_button_Click_1(object sender, EventArgs e)
-        {
+            this.Hide();
             register_form reg_form = new register_form();
+            reg_form.FormClosed += (s, args) => this.Close();
             reg_form.Show();
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -101,13 +53,40 @@ namespace Connect_A_Bull
 
         private void Login_button_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Test_btn_Click(object sender, EventArgs e)
-        {
+            this.Hide();
             Dashboard dash_form = new Dashboard();
+            dash_form.FormClosed += (s, args) => this.Close();
             dash_form.Show();
+
         }
+
+        //functions to be able to drag the plane around
+
+        bool drag;
+        int mouse_x, mouse_y;
+
+
+        private void dragPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag = false;
+        }
+
+        private void dragPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drag == true)
+            {
+                this.Left = Cursor.Position.X - mouse_x;
+                this.Top = Cursor.Position.Y - mouse_y;
+
+            }
+        }
+
+        private void dragPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            drag = true;
+            mouse_x = Cursor.Position.X - this.Left;
+            mouse_y = Cursor.Position.Y - this.Top;
+        }
+
     }
 }

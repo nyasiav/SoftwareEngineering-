@@ -43,6 +43,7 @@
             this.exit_btn = new System.Windows.Forms.Label();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.drag_panel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // ln_txtnox
@@ -184,7 +185,7 @@
             this.register_btn.IconZoom = 90D;
             this.register_btn.IsTab = false;
             this.register_btn.Location = new System.Drawing.Point(579, 599);
-            this.register_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.register_btn.Margin = new System.Windows.Forms.Padding(5);
             this.register_btn.Name = "register_btn";
             this.register_btn.Normalcolor = System.Drawing.Color.DarkCyan;
             this.register_btn.OnHovercolor = System.Drawing.Color.LightSeaGreen;
@@ -197,6 +198,7 @@
             this.register_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.register_btn.Textcolor = System.Drawing.Color.White;
             this.register_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register_btn.Click += new System.EventHandler(this.Register_btn_Click);
             // 
             // exit_btn
             // 
@@ -234,6 +236,17 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // drag_panel
+            // 
+            this.drag_panel.BackColor = System.Drawing.Color.Transparent;
+            this.drag_panel.Location = new System.Drawing.Point(13, 12);
+            this.drag_panel.Name = "drag_panel";
+            this.drag_panel.Size = new System.Drawing.Size(1285, 29);
+            this.drag_panel.TabIndex = 41;
+            this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
+            this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
+            this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
+            // 
             // register_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,6 +254,7 @@
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1387, 788);
+            this.Controls.Add(this.drag_panel);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.register_btn);
@@ -256,7 +270,7 @@
             this.Controls.Add(this.email_txtbox);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "register_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
@@ -282,5 +296,6 @@
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Label minimize_btn;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Panel drag_panel;
     }
 }
