@@ -38,3 +38,5 @@ C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Co
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Dashboard.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.register_form.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Calendar.resources
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
