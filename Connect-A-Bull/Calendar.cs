@@ -31,7 +31,12 @@ namespace Connect_A_Bull
             JArray jsonArray = JArray.Parse(json_data);
             var jsonObjects = jsonArray.OfType<JObject>().ToList();
 
-            label2.Text = jsonObjects[0].ToString();
+            String allCourses = "";
+            for(int i = 0; i< jsonObjects.Count;)
+            {
+
+            }
+            label2.Text = jsonObjects[1]["name"].ToString();
 
 
 
