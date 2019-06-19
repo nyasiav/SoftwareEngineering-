@@ -43,3 +43,4 @@ C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.
 C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.dll
 C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
 C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Calendar.resources
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ForgotPassword.resources

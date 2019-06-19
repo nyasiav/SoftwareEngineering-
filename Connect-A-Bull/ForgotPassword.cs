@@ -10,60 +10,26 @@ using System.Windows.Forms;
 
 namespace Connect_A_Bull
 {
-    public partial class login_page : Form
+    public partial class ForgotPassword : Form
     {
-        public login_page()
+        public ForgotPassword()
         {
             InitializeComponent();
         }
 
-        private void Username_box_TextChanged(object sender, EventArgs e)
+        private void ForgotPassword_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Pass_box_TextChanged(object sender, EventArgs e)
+        private void Exit_btn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Sign_up_button_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            register_form reg_form = new register_form();
-            reg_form.FormClosed += (s, args) => this.Close();
-            reg_form.Show();
-
+            this.Close();
         }
 
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Exit_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Login_page_Load(object sender, EventArgs e)
-        {
-            name_box.Focus();
-        }
-
-        private void Login_button_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Dashboard dash_form = new Dashboard();
-            dash_form.FormClosed += (s, args) => this.Close();
-            dash_form.Show();
-
-        }
-
-        private void Forgot_password_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ForgotPassword forgot_form = new ForgotPassword();
-            forgot_form.Show();
         }
 
         //functions to be able to drag the plane around
@@ -93,6 +59,5 @@ namespace Connect_A_Bull
             mouse_x = Cursor.Position.X - this.Left;
             mouse_y = Cursor.Position.Y - this.Top;
         }
-
     }
 }

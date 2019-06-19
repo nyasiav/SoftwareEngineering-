@@ -40,6 +40,7 @@
             this.exit_btn = new System.Windows.Forms.Label();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.drag_panel = new System.Windows.Forms.Panel();
+            this.forgot_password = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // username_label
@@ -72,7 +73,7 @@
             this.register_label.BackColor = System.Drawing.Color.Transparent;
             this.register_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.register_label.Location = new System.Drawing.Point(600, 532);
+            this.register_label.Location = new System.Drawing.Point(605, 538);
             this.register_label.Name = "register_label";
             this.register_label.Size = new System.Drawing.Size(168, 17);
             this.register_label.TabIndex = 8;
@@ -164,7 +165,7 @@
             this.sign_up_button.IconVisible = true;
             this.sign_up_button.IconZoom = 90D;
             this.sign_up_button.IsTab = false;
-            this.sign_up_button.Location = new System.Drawing.Point(636, 561);
+            this.sign_up_button.Location = new System.Drawing.Point(638, 573);
             this.sign_up_button.Margin = new System.Windows.Forms.Padding(5);
             this.sign_up_button.Name = "sign_up_button";
             this.sign_up_button.Normalcolor = System.Drawing.Color.LimeGreen;
@@ -222,6 +223,23 @@
             this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
             this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
             // 
+            // forgot_password
+            // 
+            this.forgot_password.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.forgot_password.AutoSize = true;
+            this.forgot_password.BackColor = System.Drawing.Color.Transparent;
+            this.forgot_password.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.forgot_password.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgot_password.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.forgot_password.Location = new System.Drawing.Point(611, 508);
+            this.forgot_password.Name = "forgot_password";
+            this.forgot_password.Size = new System.Drawing.Size(157, 17);
+            this.forgot_password.TabIndex = 44;
+            this.forgot_password.TabStop = true;
+            this.forgot_password.Text = "Forgot your password?";
+            this.forgot_password.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
+            this.forgot_password.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Forgot_password_LinkClicked);
+            // 
             // login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,6 +248,7 @@
             this.BackgroundImage = global::Connect_A_Bull.Resource1.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1387, 788);
+            this.Controls.Add(this.forgot_password);
             this.Controls.Add(this.drag_panel);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.exit_btn);
@@ -264,6 +283,7 @@
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Label minimize_btn;
         private System.Windows.Forms.Panel drag_panel;
+        private System.Windows.Forms.LinkLabel forgot_password;
     }
 }
 
