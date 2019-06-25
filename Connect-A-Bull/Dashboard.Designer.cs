@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.drag_panel = new System.Windows.Forms.Panel();
             this.settings_btn = new System.Windows.Forms.Button();
             this.reminders_btn = new System.Windows.Forms.Button();
             this.eval_btn = new System.Windows.Forms.Button();
             this.chat_btn = new System.Windows.Forms.Button();
             this.assignments_btn = new System.Windows.Forms.Button();
             this.calendar_btn = new System.Windows.Forms.Button();
-            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dash_container = new System.Windows.Forms.Panel();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Label();
             this.drag_panel2 = new System.Windows.Forms.Panel();
-            this.drag_panel = new System.Windows.Forms.Panel();
+            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,16 @@
             this.panel1.Size = new System.Drawing.Size(319, 788);
             this.panel1.TabIndex = 0;
             // 
+            // drag_panel
+            // 
+            this.drag_panel.Location = new System.Drawing.Point(12, 7);
+            this.drag_panel.Name = "drag_panel";
+            this.drag_panel.Size = new System.Drawing.Size(303, 22);
+            this.drag_panel.TabIndex = 7;
+            this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
+            this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
+            this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
+            // 
             // settings_btn
             // 
             this.settings_btn.FlatAppearance.BorderSize = 0;
@@ -78,6 +88,7 @@
             this.settings_btn.TabIndex = 6;
             this.settings_btn.Text = "settings";
             this.settings_btn.UseVisualStyleBackColor = true;
+            this.settings_btn.Click += new System.EventHandler(this.Settings_btn_Click);
             // 
             // reminders_btn
             // 
@@ -92,6 +103,7 @@
             this.reminders_btn.TabIndex = 5;
             this.reminders_btn.Text = "reminders";
             this.reminders_btn.UseVisualStyleBackColor = true;
+            this.reminders_btn.Click += new System.EventHandler(this.Reminders_btn_Click);
             // 
             // eval_btn
             // 
@@ -106,6 +118,7 @@
             this.eval_btn.TabIndex = 4;
             this.eval_btn.Text = "evaluations";
             this.eval_btn.UseVisualStyleBackColor = true;
+            this.eval_btn.Click += new System.EventHandler(this.Evaluations_btn_Click);
             // 
             // chat_btn
             // 
@@ -120,6 +133,7 @@
             this.chat_btn.TabIndex = 3;
             this.chat_btn.Text = "chat";
             this.chat_btn.UseVisualStyleBackColor = true;
+            this.chat_btn.Click += new System.EventHandler(this.Chat_btn_Click);
             // 
             // assignments_btn
             // 
@@ -134,6 +148,7 @@
             this.assignments_btn.TabIndex = 2;
             this.assignments_btn.Text = "assignments";
             this.assignments_btn.UseVisualStyleBackColor = true;
+            this.assignments_btn.Click += new System.EventHandler(this.Assignments_btn_Click);
             // 
             // calendar_btn
             // 
@@ -149,20 +164,6 @@
             this.calendar_btn.Text = "calendar";
             this.calendar_btn.UseVisualStyleBackColor = true;
             this.calendar_btn.Click += new System.EventHandler(this.Calendar_btn_Click);
-            // 
-            // home_btn
-            // 
-            this.home_btn.BackColor = System.Drawing.Color.Transparent;
-            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
-            this.home_btn.ImageActive = null;
-            this.home_btn.Location = new System.Drawing.Point(41, 36);
-            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(235, 92);
-            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.home_btn.TabIndex = 0;
-            this.home_btn.TabStop = false;
-            this.home_btn.Zoom = 10;
             // 
             // bunifuElipse1
             // 
@@ -218,15 +219,19 @@
             this.drag_panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
             this.drag_panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
             // 
-            // drag_panel
+            // home_btn
             // 
-            this.drag_panel.Location = new System.Drawing.Point(12, 7);
-            this.drag_panel.Name = "drag_panel";
-            this.drag_panel.Size = new System.Drawing.Size(303, 22);
-            this.drag_panel.TabIndex = 7;
-            this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
-            this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
-            this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
+            this.home_btn.BackColor = System.Drawing.Color.Transparent;
+            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
+            this.home_btn.ImageActive = null;
+            this.home_btn.Location = new System.Drawing.Point(41, 36);
+            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.home_btn.Name = "home_btn";
+            this.home_btn.Size = new System.Drawing.Size(235, 92);
+            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home_btn.TabIndex = 0;
+            this.home_btn.TabStop = false;
+            this.home_btn.Zoom = 10;
             // 
             // Dashboard
             // 
