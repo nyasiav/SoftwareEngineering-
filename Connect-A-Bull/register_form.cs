@@ -59,6 +59,11 @@ namespace Connect_A_Bull
             }
         }
 
+        private void fn_txtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void dragPanel_MouseDown(object sender, MouseEventArgs e)
         {
             drag = true;

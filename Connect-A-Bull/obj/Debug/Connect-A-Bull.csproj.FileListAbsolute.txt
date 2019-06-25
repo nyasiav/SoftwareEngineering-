@@ -50,3 +50,27 @@ C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_B
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Evaluations.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Reminders.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Chat.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Assignments.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Calendar.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Chat.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Dashboard.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Evaluations.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ForgotPassword.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Properties.Resources.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.register_form.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Reminders.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.drag_panel.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Resource1.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Settings.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.GenerateResource.cache
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.exe
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe.config
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.pdb
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.login_page.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CoreCompileInputs.cache
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CopyComplete

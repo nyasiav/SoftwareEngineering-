@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Connect-A-Bull/obj/Release/Connect-A-Bull.csprojAssemblyReference.cache
+/Connect-A-Bull/obj/Release/Connect-A-Bull.csproj.CoreCompileInputs.cache
