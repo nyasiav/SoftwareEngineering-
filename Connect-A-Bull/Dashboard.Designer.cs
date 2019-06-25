@@ -37,12 +37,13 @@
             this.chat_btn = new System.Windows.Forms.Button();
             this.assignments_btn = new System.Windows.Forms.Button();
             this.calendar_btn = new System.Windows.Forms.Button();
+            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dash_container = new System.Windows.Forms.Panel();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Label();
             this.drag_panel2 = new System.Windows.Forms.Panel();
-            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.logout_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(132)))));
+            this.panel1.Controls.Add(this.logout_lbl);
             this.panel1.Controls.Add(this.drag_panel);
             this.panel1.Controls.Add(this.settings_btn);
             this.panel1.Controls.Add(this.reminders_btn);
@@ -165,6 +167,20 @@
             this.calendar_btn.UseVisualStyleBackColor = true;
             this.calendar_btn.Click += new System.EventHandler(this.Calendar_btn_Click);
             // 
+            // home_btn
+            // 
+            this.home_btn.BackColor = System.Drawing.Color.Transparent;
+            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
+            this.home_btn.ImageActive = null;
+            this.home_btn.Location = new System.Drawing.Point(41, 36);
+            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.home_btn.Name = "home_btn";
+            this.home_btn.Size = new System.Drawing.Size(235, 92);
+            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home_btn.TabIndex = 0;
+            this.home_btn.TabStop = false;
+            this.home_btn.Zoom = 10;
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
@@ -219,19 +235,16 @@
             this.drag_panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
             this.drag_panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
             // 
-            // home_btn
+            // logout_lbl
             // 
-            this.home_btn.BackColor = System.Drawing.Color.Transparent;
-            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
-            this.home_btn.ImageActive = null;
-            this.home_btn.Location = new System.Drawing.Point(41, 36);
-            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(235, 92);
-            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.home_btn.TabIndex = 0;
-            this.home_btn.TabStop = false;
-            this.home_btn.Zoom = 10;
+            this.logout_lbl.AutoSize = true;
+            this.logout_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_lbl.ForeColor = System.Drawing.Color.White;
+            this.logout_lbl.Location = new System.Drawing.Point(130, 742);
+            this.logout_lbl.Name = "logout_lbl";
+            this.logout_lbl.Size = new System.Drawing.Size(59, 17);
+            this.logout_lbl.TabIndex = 8;
+            this.logout_lbl.Text = "Log Out";
             // 
             // Dashboard
             // 
@@ -250,6 +263,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,5 +286,6 @@
         private System.Windows.Forms.Label exit_btn;
         private System.Windows.Forms.Panel drag_panel;
         private System.Windows.Forms.Panel drag_panel2;
+        private System.Windows.Forms.Label logout_lbl;
     }
 }
