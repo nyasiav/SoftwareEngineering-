@@ -47,11 +47,11 @@
             // 
             this.username_label.AutoSize = true;
             this.username_label.BackColor = System.Drawing.Color.Transparent;
-            this.username_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.username_label.Location = new System.Drawing.Point(575, 332);
             this.username_label.Name = "username_label";
-            this.username_label.Size = new System.Drawing.Size(103, 23);
+            this.username_label.Size = new System.Drawing.Size(105, 24);
             this.username_label.TabIndex = 3;
             this.username_label.Text = "Username";
             // 
@@ -59,11 +59,11 @@
             // 
             this.pass_label.AutoSize = true;
             this.pass_label.BackColor = System.Drawing.Color.Transparent;
-            this.pass_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.pass_label.Location = new System.Drawing.Point(575, 396);
             this.pass_label.Name = "pass_label";
-            this.pass_label.Size = new System.Drawing.Size(96, 23);
+            this.pass_label.Size = new System.Drawing.Size(100, 24);
             this.pass_label.TabIndex = 4;
             this.pass_label.Text = "Password";
             // 
@@ -71,11 +71,11 @@
             // 
             this.register_label.AutoSize = true;
             this.register_label.BackColor = System.Drawing.Color.Transparent;
-            this.register_label.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.register_label.Location = new System.Drawing.Point(605, 538);
             this.register_label.Name = "register_label";
-            this.register_label.Size = new System.Drawing.Size(168, 17);
+            this.register_label.Size = new System.Drawing.Size(180, 17);
             this.register_label.TabIndex = 8;
             this.register_label.Text = "Don\'t have an account?";
             // 
@@ -88,18 +88,19 @@
             // 
             this.name_box.BackColor = System.Drawing.Color.Gainsboro;
             this.name_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.name_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_box.Location = new System.Drawing.Point(579, 357);
             this.name_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name_box.Name = "name_box";
             this.name_box.Size = new System.Drawing.Size(223, 23);
             this.name_box.TabIndex = 10;
+            this.name_box.TextChanged += new System.EventHandler(this.name_box_TextChanged);
             // 
             // pass_box
             // 
             this.pass_box.BackColor = System.Drawing.Color.Gainsboro;
             this.pass_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pass_box.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass_box.Location = new System.Drawing.Point(579, 421);
             this.pass_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pass_box.Name = "pass_box";
@@ -186,12 +187,12 @@
             this.exit_btn.AutoSize = true;
             this.exit_btn.BackColor = System.Drawing.Color.Transparent;
             this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit_btn.ForeColor = System.Drawing.Color.DarkCyan;
             this.exit_btn.Location = new System.Drawing.Point(1343, 11);
             this.exit_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(27, 26);
+            this.exit_btn.Size = new System.Drawing.Size(27, 25);
             this.exit_btn.TabIndex = 38;
             this.exit_btn.Text = "X";
             this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
@@ -201,12 +202,12 @@
             this.minimize_btn.AutoSize = true;
             this.minimize_btn.BackColor = System.Drawing.Color.Transparent;
             this.minimize_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimize_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimize_btn.ForeColor = System.Drawing.Color.DarkCyan;
             this.minimize_btn.Location = new System.Drawing.Point(1305, 4);
             this.minimize_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minimize_btn.Name = "minimize_btn";
-            this.minimize_btn.Size = new System.Drawing.Size(32, 38);
+            this.minimize_btn.Size = new System.Drawing.Size(26, 36);
             this.minimize_btn.TabIndex = 41;
             this.minimize_btn.Text = "-";
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,11 +230,11 @@
             this.forgot_password.AutoSize = true;
             this.forgot_password.BackColor = System.Drawing.Color.Transparent;
             this.forgot_password.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
-            this.forgot_password.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgot_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgot_password.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.forgot_password.Location = new System.Drawing.Point(611, 508);
             this.forgot_password.Name = "forgot_password";
-            this.forgot_password.Size = new System.Drawing.Size(157, 17);
+            this.forgot_password.Size = new System.Drawing.Size(174, 17);
             this.forgot_password.TabIndex = 44;
             this.forgot_password.TabStop = true;
             this.forgot_password.Text = "Forgot your password?";

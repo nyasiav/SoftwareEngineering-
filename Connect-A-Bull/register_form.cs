@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,8 @@ namespace Connect_A_Bull
 {
     public partial class register_form : Form
     {
+        ObservableCollection<Student> studentCollection = new ObservableCollection<Student>();
+       
         public register_form()
         {
             InitializeComponent();
@@ -34,10 +38,40 @@ namespace Connect_A_Bull
 
         private void Register_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Dashboard dash_form = new Dashboard();
-            dash_form.FormClosed += (s, args) => this.Close();
-            dash_form.Show();
+            //this.Hide();
+            //Dashboard dash_form = new Dashboard();
+            //dash_form.FormClosed += (s, args) => this.Close();
+            //dash_form.Show();
+            if (Validate_Click())
+            {
+                Student nS = new Student();
+                nS.SFname = fn_txtbox.Text;
+                nS.SLname = ln_txtnox.Text;
+                nS.SEmail = email_txtbox.Text;
+
+                byte[] salt;
+                new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+                var secureP = new Rfc2898DeriveBytes(pass_txtbox.Text, salt, 10000);
+
+                byte[] hash = secureP.GetBytes(20);
+                byte[] hashBytes = new byte[36];
+
+                Array.Copy(salt, 0, hashBytes, 0, 16);
+                Array.Copy(hash, 0, hashBytes, 16, 20);
+
+                string savedPass = Convert.ToBase64String(hashBytes);
+                nS.SPassword = savedPass;
+                
+                
+                MessageBox.Show("Account Created!");
+                //add to database
+                studentCollection = login_page.studentCollection;
+                studentCollection.Add(nS);
+                login_page lp = new login_page();
+                this.Hide();
+                lp.ShowDialog();
+                this.Close();
+            }
         }
 
         //functions for window to be able to be dragged
@@ -70,5 +104,75 @@ namespace Connect_A_Bull
             mouse_x = Cursor.Position.X - this.Left;
             mouse_y = Cursor.Position.Y - this.Top;
         }
-    }
+
+        private bool Validate_Click()
+        {
+            bool val = false;
+            if (string.IsNullOrWhiteSpace(fn_txtbox.Text) || string.IsNullOrWhiteSpace(ln_txtnox.Text) || string.IsNullOrWhiteSpace(pass_txtbox.Text)
+                || string.IsNullOrWhiteSpace(email_txtbox.Text) || string.IsNullOrWhiteSpace(pass_validation_txtbox.Text))
+            {
+                MessageBox.Show("Field left blank!");
+            }
+            else
+            {
+                foreach( Student s in login_page.studentCollection)
+                {
+                    if(email_txtbox.Text == s.SEmail)
+                    {
+                        MessageBox.Show("This email already exist, please reset your password if you do not remeber it.");
+                        ClearEmail();
+                        ClearPass();
+                        return false;                    
+                    }
+                }
+                val = ValidateForLetters(fn_txtbox.Text, ln_txtnox.Text) ? true : NameError();     
+                val = ValidatePassword(pass_txtbox.Text, pass_validation_txtbox.Text) ? true : false;
+             
+            }
+            return val;
+        }
+
+        private bool NameError()
+        {
+            MessageBox.Show("Name can only contain letters");
+            return false;
+        }
+
+        private bool ValidateForLetters(string fn_tester, string ln_tester)
+        {
+            return fn_tester.Where(x => char.IsLetter(x)).Count() == fn_tester.Length && ln_tester.Where(x => char.IsLetter(x)).Count() == ln_tester.Length;
+        }
+
+        private bool ValidatePassword(string p_tester, string vp_tester)
+        {
+            if (p_tester == vp_tester)
+            {
+                if (p_tester.Length < 8 || p_tester.Length > 15)
+                {
+                    MessageBox.Show("Password needs to be 8 - 15 characters and can include letters, numbers and symbols.");
+                    ClearPass();
+                    return false;
+                }
+            } else { MessageBox.Show("Passwords do not match!");
+                ClearPass();
+                return false;
+            }
+
+  
+            return true;
+        }
+
+        private void ClearPass()
+        {
+            pass_txtbox.Clear();
+            pass_validation_txtbox.Clear();
+        }
+
+        private void ClearEmail()
+        {
+            email_txtbox.Clear();
+        }
+
+
+}
 }

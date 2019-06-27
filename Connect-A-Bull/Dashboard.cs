@@ -141,6 +141,16 @@ namespace Connect_A_Bull
             }
         }
 
+        private void logout_lbl_Click(object sender, EventArgs e)
+        {
+            //login_page lp = new login_page();
+            this.Hide();
+            login_page lp = new login_page();
+
+            lp.ShowDialog();
+            this.Close();
+        }
+
         private void dragPanel_MouseDown(object sender, MouseEventArgs e)
         {
             drag = true;

@@ -12,8 +12,9 @@ namespace Connect_A_Bull
         public string SLname { get; set; }
         public string SEmail { get; set; }
         public string SPassword { get; set; }
+        public bool Reset { get; set; }
 
-        public Student(string sFname, string sLname,string sEmail, string sPassword)
+        public Student(string sFname, string sLname, string sEmail, string sPassword)
         {
             SFname = sFname;
             SLname = sLname;
