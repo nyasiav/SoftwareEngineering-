@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -14,15 +15,17 @@ namespace Connect_A_Bull
 {
     public partial class register_form : Form
     {
-        ObservableCollection<Student> studentCollection = new ObservableCollection<Student>();
-       
-        public register_form()
+        login_page hold = new login_page();
+
+        public register_form(login_page lp)
         {
             InitializeComponent();
+            hold = lp;
         }
 
         private void Exit_btn_Click(object sender, EventArgs e)
         {
+            hold.Show();
             this.Close();
         }
 
@@ -38,16 +41,9 @@ namespace Connect_A_Bull
 
         private void Register_btn_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //Dashboard dash_form = new Dashboard();
-            //dash_form.FormClosed += (s, args) => this.Close();
-            //dash_form.Show();
             if (Validate_Click())
             {
-                Student nS = new Student();
-                nS.SFname = fn_txtbox.Text;
-                nS.SLname = ln_txtnox.Text;
-                nS.SEmail = email_txtbox.Text;
+                User nU = new User(fn_txtbox.Text,ln_txtnox.Text,email_txtbox.Text,pass_txtbox.Text,false);
 
                 byte[] salt;
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
@@ -60,17 +56,13 @@ namespace Connect_A_Bull
                 Array.Copy(hash, 0, hashBytes, 16, 20);
 
                 string savedPass = Convert.ToBase64String(hashBytes);
-                nS.SPassword = savedPass;
-                
-                
+                nU.Password = savedPass;
+
+                SQLiteDataAccess.SavePerson(nU);
+                login_page.userCollection = SQLiteDataAccess.LoadPeople();
+
+                ClearEverything();
                 MessageBox.Show("Account Created!");
-                //add to database
-                studentCollection = login_page.studentCollection;
-                studentCollection.Add(nS);
-                login_page lp = new login_page();
-                this.Hide();
-                lp.ShowDialog();
-                this.Close();
             }
         }
 
@@ -115,9 +107,9 @@ namespace Connect_A_Bull
             }
             else
             {
-                foreach( Student s in login_page.studentCollection)
+                foreach(User s in login_page.userCollection)
                 {
-                    if(email_txtbox.Text == s.SEmail)
+                    if(email_txtbox.Text == s.Email)
                     {
                         MessageBox.Show("This email already exist, please reset your password if you do not remeber it.");
                         ClearEmail();
@@ -162,6 +154,15 @@ namespace Connect_A_Bull
             return true;
         }
 
+        private void ClearEverything()
+        {
+            fn_txtbox.Clear();
+            ln_txtnox.Clear();
+            email_txtbox.Clear();
+            pass_txtbox.Clear();
+            pass_validation_txtbox.Clear();
+        }
+
         private void ClearPass()
         {
             pass_txtbox.Clear();
@@ -172,7 +173,5 @@ namespace Connect_A_Bull
         {
             email_txtbox.Clear();
         }
-
-
-}
+    }
 }

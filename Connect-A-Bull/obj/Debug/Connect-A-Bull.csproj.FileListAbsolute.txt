@@ -50,12 +50,32 @@ C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_B
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Evaluations.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Reminders.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Chat.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Users2.db
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\x86\e_sqlite3.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\x64\e_sqlite3.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe.config
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.pdb
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Dapper.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLite-net.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.dll
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Dapper.xml
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLite-net.xml
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.xml
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Assignments.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Calendar.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Chat.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Dashboard.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Evaluations.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ForgotPassword.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.login_page.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Properties.Resources.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.register_form.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Reminders.resources
@@ -63,14 +83,8 @@ C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\C
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Resource1.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Settings.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.GenerateResource.cache
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.exe
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe.config
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.exe
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Connect-A-Bull.pdb
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.login_page.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CoreCompileInputs.cache
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.CopyComplete
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.exe
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache

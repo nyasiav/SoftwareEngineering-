@@ -13,9 +13,11 @@ namespace Connect_A_Bull
 {
     public partial class ForgotPassword : Form
     {
-        public ForgotPassword()
+        login_page hold = new login_page();
+        public ForgotPassword(login_page lp)
         {
             InitializeComponent();
+            hold = lp;
         }
 
         private void ForgotPassword_Load(object sender, EventArgs e)
@@ -25,6 +27,7 @@ namespace Connect_A_Bull
 
         private void Exit_btn_Click(object sender, EventArgs e)
         {
+            hold.Show();
             this.Close();
         }
 
@@ -129,12 +132,11 @@ namespace Connect_A_Bull
 
         private bool ValidateEmail(string tester)
         {
-            //query database for email
-            foreach (Student s in login_page.studentCollection)
+            //query for email
+            foreach (User s in login_page.userCollection)
             {
-                if (tester == s.SEmail)
+                if (tester == s.Email)
                 {
-                    s.Reset = true;
                     return true;
                 }
             }
@@ -142,7 +144,6 @@ namespace Connect_A_Bull
             MessageBox.Show("This email is not associated with an account or space left blank");
             ClearAll();
             return false;
-
         }
 
         private void ClearAll()

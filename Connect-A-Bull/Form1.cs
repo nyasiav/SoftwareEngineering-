@@ -14,25 +14,14 @@ namespace Connect_A_Bull
 {
     public partial class login_page : Form
     {
-        public static ObservableCollection<Student> studentCollection = new ObservableCollection<Student>();
+        //List of Users in database
+        public static List<User> userCollection = new List<User>();
+
         public login_page()
         {
             InitializeComponent();
-            Student newS = new Student("Test", "Stu", "teststu", "pass");
-
-            byte[] salt;
-            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
-            var secureP = new Rfc2898DeriveBytes(newS.SPassword, salt, 10000);
-
-            byte[] hash = secureP.GetBytes(20);
-            byte[] hashBytes = new byte[36];
-
-            Array.Copy(salt, 0, hashBytes, 0, 16);
-            Array.Copy(hash, 0, hashBytes, 16, 20);
-
-            string savedPass = Convert.ToBase64String(hashBytes);
-            newS.SPassword = savedPass;
-            studentCollection.Add(newS);
+            //Reading database at startup and storing
+            ReadDatabase();
         }
 
         private void Username_box_TextChanged(object sender, EventArgs e)
@@ -47,11 +36,13 @@ namespace Connect_A_Bull
 
         private void Sign_up_button_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            register_form reg_form = new register_form();
-            reg_form.FormClosed += (s, args) => this.Close();
+            /*Since the login_page contains the main it must stay open in order
+             * to avoid a Null reference error. Passing this page into next and hiding
+             * it.
+             */
+            register_form reg_form = new register_form(this);
             reg_form.Show();
-
+            this.Hide();
         }
 
         private void Minimize_btn_Click(object sender, EventArgs e)
@@ -61,6 +52,7 @@ namespace Connect_A_Bull
 
         private void Exit_btn_Click(object sender, EventArgs e)
         {
+            //Closer entire application
             Application.Exit();
         }
 
@@ -71,33 +63,39 @@ namespace Connect_A_Bull
 
         private void Login_button_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //Dashboard dash_form = new Dashboard();
-            //dash_form.FormClosed += (s, args) => this.Close();
-            //dash_form.Show();
+            /*Validates user input and navigates to the appropriate page
+             *based on admin privelage*/
             if (Validate_Click(name_box.Text))
             {
-                Dashboard db = new Dashboard();
-                
+                /*Need to create Admin page and then navigate based on Admin user var*/
+                Dashboard db = new Dashboard(this);
+                db.Show();
                 this.Hide();
-
-                db.ShowDialog();
-                //this.Close();
             }
 
         }
 
+        void ReadDatabase()
+        {
+            //Reading database and storing users in list
+            userCollection = SQLiteDataAccess.LoadPeople();
+        }
+
         private void Forgot_password_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ForgotPassword forgot_form = new ForgotPassword();
+            /*Since the login_page contains the main it must stay open in order
+           * to avoid a Null reference error. Passing this page into next and hiding
+           * it.
+           */
+            ForgotPassword forgot_form = new ForgotPassword(this);
             forgot_form.Show();
+            this.Hide(); 
         }
 
         //functions to be able to drag the plane around
 
         bool drag;
         int mouse_x, mouse_y;
-
 
         private void dragPanel_MouseUp(object sender, MouseEventArgs e)
         {
@@ -128,11 +126,11 @@ namespace Connect_A_Bull
 
         private bool Validate_Click(string tester)
         {
-            foreach (Student s in studentCollection)
+            foreach (User s in userCollection)
             {
-                if (name_box.Text == s.SEmail)
+                if (name_box.Text == s.Email)
                 {
-                    string savedPasswordHash = s.SPassword.ToString();
+                    string savedPasswordHash = s.Password.ToString();
                     byte[] hashBytes = Convert.FromBase64String(savedPasswordHash);
 
                     byte[] salt = new byte[16];
@@ -150,9 +148,7 @@ namespace Connect_A_Bull
 
                     if (ok == 1)
                     {
-                        //MessageBox.Show("Granted");
                         return true;
-                        //this.Hide();
                     }
                 }
             }
@@ -164,6 +160,7 @@ namespace Connect_A_Bull
 
         void ClearAll()
         {
+            //Clear user input on page
             name_box.Clear();
             pass_box.Clear();
         }

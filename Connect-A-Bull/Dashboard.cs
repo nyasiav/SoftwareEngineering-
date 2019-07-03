@@ -12,10 +12,11 @@ namespace Connect_A_Bull
 {
     public partial class Dashboard : Form
     {
-
-        public Dashboard()
+        login_page hold = new login_page();
+        public Dashboard(login_page lp)
         {
             InitializeComponent();
+            hold = lp;
         }
 
 
@@ -31,7 +32,10 @@ namespace Connect_A_Bull
 
         private void Exit_btn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            login_page lp = new login_page();
+            this.Close();
+            lp.ShowDialog();
+            //Application.Exit();
         }
 
 

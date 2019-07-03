@@ -145,7 +145,7 @@
             this.chat_btn.Name = "chat_btn";
             this.chat_btn.Size = new System.Drawing.Size(311, 53);
             this.chat_btn.TabIndex = 3;
-            this.chat_btn.Text = "chat";
+            this.chat_btn.Text = "email";
             this.chat_btn.UseVisualStyleBackColor = true;
             this.chat_btn.Click += new System.EventHandler(this.Chat_btn_Click);
             // 
