@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Assignments.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,15 @@
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
+    <Compile Include="Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assignments.resx">
       <DependentUpon>Assignments.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="connectabullsqlDataSet.xsc">
       <DependentUpon>connectabullsqlDataSet.xsd</DependentUpon>
