@@ -43,7 +43,7 @@ namespace Connect_A_Bull
         {
             if (Validate_Click())
             {
-                User nU = new User(fn_txtbox.Text,ln_txtnox.Text,email_txtbox.Text,pass_txtbox.Text,false);
+                User nU = new User(fn_txtbox.Text,ln_txtnox.Text,email_txtbox.Text,pass_txtbox.Text,false,false);
 
                 byte[] salt;
                 new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);

@@ -1,6 +1,6 @@
 ﻿namespace Connect_A_Bull
 {
-    partial class drag_panel
+    partial class ResetPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -43,12 +43,12 @@
             this.minimize_btn.AutoSize = true;
             this.minimize_btn.BackColor = System.Drawing.Color.Transparent;
             this.minimize_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimize_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimize_btn.ForeColor = System.Drawing.Color.DarkCyan;
             this.minimize_btn.Location = new System.Drawing.Point(1291, 9);
             this.minimize_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minimize_btn.Name = "minimize_btn";
-            this.minimize_btn.Size = new System.Drawing.Size(32, 38);
+            this.minimize_btn.Size = new System.Drawing.Size(26, 36);
             this.minimize_btn.TabIndex = 43;
             this.minimize_btn.Text = "-";
             this.minimize_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,12 +59,12 @@
             this.exit_btn.AutoSize = true;
             this.exit_btn.BackColor = System.Drawing.Color.Transparent;
             this.exit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit_btn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit_btn.ForeColor = System.Drawing.Color.DarkCyan;
             this.exit_btn.Location = new System.Drawing.Point(1329, 16);
             this.exit_btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(27, 26);
+            this.exit_btn.Size = new System.Drawing.Size(27, 25);
             this.exit_btn.TabIndex = 42;
             this.exit_btn.Text = "X";
             this.exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
@@ -84,11 +84,11 @@
             // 
             this.new_pass_label.AutoSize = true;
             this.new_pass_label.BackColor = System.Drawing.Color.Transparent;
-            this.new_pass_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_pass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_pass_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.new_pass_label.Location = new System.Drawing.Point(570, 308);
             this.new_pass_label.Name = "new_pass_label";
-            this.new_pass_label.Size = new System.Drawing.Size(142, 23);
+            this.new_pass_label.Size = new System.Drawing.Size(148, 24);
             this.new_pass_label.TabIndex = 45;
             this.new_pass_label.Text = "New Password";
             // 
@@ -96,7 +96,7 @@
             // 
             this.new_password.BackColor = System.Drawing.Color.Gainsboro;
             this.new_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.new_password.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_password.Location = new System.Drawing.Point(574, 345);
             this.new_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.new_password.Name = "new_password";
@@ -108,7 +108,7 @@
             // 
             this.confirm_new_password.BackColor = System.Drawing.Color.Gainsboro;
             this.confirm_new_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirm_new_password.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_new_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirm_new_password.Location = new System.Drawing.Point(574, 452);
             this.confirm_new_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.confirm_new_password.Name = "confirm_new_password";
@@ -120,11 +120,11 @@
             // 
             this.confirm_new_pass_label.AutoSize = true;
             this.confirm_new_pass_label.BackColor = System.Drawing.Color.Transparent;
-            this.confirm_new_pass_label.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_new_pass_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirm_new_pass_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(91)))), ((int)(((byte)(124)))));
             this.confirm_new_pass_label.Location = new System.Drawing.Point(570, 415);
             this.confirm_new_pass_label.Name = "confirm_new_pass_label";
-            this.confirm_new_pass_label.Size = new System.Drawing.Size(219, 23);
+            this.confirm_new_pass_label.Size = new System.Drawing.Size(226, 24);
             this.confirm_new_pass_label.TabIndex = 47;
             this.confirm_new_pass_label.Text = "Confirm New Password";
             // 
@@ -163,8 +163,9 @@
             this.submit_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.submit_button.Textcolor = System.Drawing.Color.White;
             this.submit_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit_button.Click += new System.EventHandler(this.submit_button_Click);
             // 
-            // drag_panel
+            // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +182,7 @@
             this.Controls.Add(this.exit_btn);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "drag_panel";
+            this.Name = "ResetPassword";
             this.Text = "ResetPassword";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,8 @@ namespace Connect_A_Bull
     public partial class ForgotPassword : Form
     {
         login_page hold = new login_page();
+        User rp = new User();
+
         public ForgotPassword(login_page lp)
         {
             InitializeComponent();
@@ -73,54 +76,38 @@ namespace Connect_A_Bull
 
                     //is the account sending the email, the second is the password for that account
                     //create new email for reset password ***GMAIL SECURITY NEEDS TO BE LOWERED
-                    client.Credentials = new System.Net.NetworkCredential("psalmsjc1@gmail.com", "//angelito2020JC");
+                    client.Credentials = new System.Net.NetworkCredential("testconnectabull@gmail.com", "teststu123");//"psalmsjc1@gmail.com", "//angelito2020JC");
                     MailMessage mail = new MailMessage();
                     //parameter is the account send ing the
-                    mail.From = new MailAddress("psalmsjc1@gmail.com");//FRom
+                    mail.From = new MailAddress("testconnectabull@gmail.com");//FRom
                     mail.To.Add(email_box.Text);
                     mail.Subject = "Verify Your Account";
 
-                    mail.Body = $"Welcome {email_box.Text}, here is your temporary password, Bull4Life you" +
+                    mail.Body = $"{rp.Fname}, here is your temporary password, Bull4Life you" +
                     $" must verify your email by clicking the link";
                     mail.BodyEncoding = Encoding.UTF8;
                     client.Send(mail);
-                    MessageBox.Show("Email sent");
+                    MessageBox.Show("Email sent, navigate back to Home Screen to login");
+                    ClearAll();
 
-                    //The end and the email has been sent
-                    //The is assigning an e=object that carries the email of the user and
-                    //The list tempToFindS will carry soley the object of that email user
-                    //List<Student> tempToFindS = ResetVerifier.Where(x => x.Email == EmailNameEntry.Text.ToString()).ToList();
-                    ////This loop will assign object StudentToEdit to the emailuserin the list tempToFundS, a copy of that person
-                    ////Object of mail user info
-                    //foreach (Student StudentToEdit in tempToFindS)
-                    //{
-                    //    //if this objecrt email mathes the email entered as a double check
-                    //    if (EmailNameEntry.Text == StudentToEdit.Email)
-                    //    {
-                    //        //We remove that person form the Master List ResetVerifier
-                    //        ResetVerifier.Remove(StudentToEdit);
-                    //        //In this loop a new object newPerson will look into list tempToFindS
-                    //        foreach (Student newPerson in tempToFindS)
-                    //        {
-                    //            //Then we will assign that object the info that is in the tempToFindS and also 
-                    //            //Modify the password to BUll4Life
-                    //            newPerson.Password = "Bull4Life";
-                    //            //Adding to the list
-                    //            ResetVerifier.Add(newPerson);
-                    //            //Writing this person to the list which just modified the users password
-                    //            WriteStudentFile();
-                    //        }
+                    byte[] salt;
+                    new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+                    var secureP = new Rfc2898DeriveBytes("Bull4Life", salt, 10000);
 
-                    //        //logging into login window for the user to log in for 2nd time, passing the list
-                    //        StudentLogin LoginSecondTime = new StudentLogin(ResetVerifier);
-                    //        LoginSecondTime.ShowDialog();
-                    //        this.Close();
+                    byte[] hash = secureP.GetBytes(20);
+                    byte[] hashBytes = new byte[36];
 
-                    //    }
-                    //}
+                    Array.Copy(salt, 0, hashBytes, 0, 16);
+                    Array.Copy(hash, 0, hashBytes, 16, 20);
+
+                    string savedPass = Convert.ToBase64String(hashBytes);
+                    rp.Password = savedPass;
+
+                    SQLiteDataAccess.UpdateUserPassword(rp);
+
                 }
             }
-            else { MessageBox.Show("Email do not match!"); }
+            else { MessageBox.Show("Emails do not match!"); }
         }
 
         private void dragPanel_MouseDown(object sender, MouseEventArgs e)
@@ -137,6 +124,8 @@ namespace Connect_A_Bull
             {
                 if (tester == s.Email)
                 {
+                    rp = s;
+                    rp.RPassword = true;
                     return true;
                 }
             }
@@ -151,5 +140,6 @@ namespace Connect_A_Bull
             email_box.Clear();
             confirm_email_box.Clear();
         }
+
     }
 }

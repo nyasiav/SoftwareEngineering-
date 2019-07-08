@@ -41,11 +41,23 @@
             this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dash_container = new System.Windows.Forms.Panel();
+            this.body_label = new System.Windows.Forms.Label();
+            this.email_to_label = new System.Windows.Forms.Label();
+            this.password_label = new System.Windows.Forms.Label();
+            this.subject_label = new System.Windows.Forms.Label();
+            this.email_label = new System.Windows.Forms.Label();
+            this.send_email_button = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.email_body = new System.Windows.Forms.TextBox();
+            this.email_subject = new System.Windows.Forms.TextBox();
+            this.to_email = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.email_box = new System.Windows.Forms.TextBox();
             this.minimize_btn = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Label();
             this.drag_panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).BeginInit();
+            this.dash_container.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -200,11 +212,185 @@
             // 
             // dash_container
             // 
+            this.dash_container.Controls.Add(this.body_label);
+            this.dash_container.Controls.Add(this.email_to_label);
+            this.dash_container.Controls.Add(this.password_label);
+            this.dash_container.Controls.Add(this.subject_label);
+            this.dash_container.Controls.Add(this.email_label);
+            this.dash_container.Controls.Add(this.send_email_button);
+            this.dash_container.Controls.Add(this.email_body);
+            this.dash_container.Controls.Add(this.email_subject);
+            this.dash_container.Controls.Add(this.to_email);
+            this.dash_container.Controls.Add(this.password);
+            this.dash_container.Controls.Add(this.email_box);
             this.dash_container.Location = new System.Drawing.Point(338, 52);
             this.dash_container.Margin = new System.Windows.Forms.Padding(4);
             this.dash_container.Name = "dash_container";
             this.dash_container.Size = new System.Drawing.Size(1036, 707);
             this.dash_container.TabIndex = 1;
+            this.dash_container.Paint += new System.Windows.Forms.PaintEventHandler(this.dash_container_Paint);
+            // 
+            // body_label
+            // 
+            this.body_label.AutoSize = true;
+            this.body_label.BackColor = System.Drawing.Color.Transparent;
+            this.body_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.body_label.ForeColor = System.Drawing.Color.White;
+            this.body_label.Location = new System.Drawing.Point(92, 179);
+            this.body_label.Name = "body_label";
+            this.body_label.Size = new System.Drawing.Size(54, 18);
+            this.body_label.TabIndex = 60;
+            this.body_label.Text = "BODY";
+            this.body_label.Visible = false;
+            // 
+            // email_to_label
+            // 
+            this.email_to_label.AutoSize = true;
+            this.email_to_label.BackColor = System.Drawing.Color.Transparent;
+            this.email_to_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_to_label.ForeColor = System.Drawing.Color.White;
+            this.email_to_label.Location = new System.Drawing.Point(92, 90);
+            this.email_to_label.Name = "email_to_label";
+            this.email_to_label.Size = new System.Drawing.Size(31, 18);
+            this.email_to_label.TabIndex = 59;
+            this.email_to_label.Text = "TO";
+            this.email_to_label.Click += new System.EventHandler(this.label4_Click);
+            this.email_to_label.Visible = false;
+            // 
+            // password_label
+            // 
+            this.password_label.AutoSize = true;
+            this.password_label.BackColor = System.Drawing.Color.Transparent;
+            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_label.ForeColor = System.Drawing.Color.White;
+            this.password_label.Location = new System.Drawing.Point(92, 53);
+            this.password_label.Name = "password_label";
+            this.password_label.Size = new System.Drawing.Size(104, 18);
+            this.password_label.TabIndex = 58;
+            this.password_label.Text = "PASSWORD";
+            this.password_label.Visible = false;
+            // 
+            // subject_label
+            // 
+            this.subject_label.AutoSize = true;
+            this.subject_label.BackColor = System.Drawing.Color.Transparent;
+            this.subject_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subject_label.ForeColor = System.Drawing.Color.White;
+            this.subject_label.Location = new System.Drawing.Point(92, 138);
+            this.subject_label.Name = "subject_label";
+            this.subject_label.Size = new System.Drawing.Size(84, 18);
+            this.subject_label.TabIndex = 56;
+            this.subject_label.Text = "SUBJECT";
+            this.subject_label.Visible = false;
+            // 
+            // email_label
+            // 
+            this.email_label.AutoSize = true;
+            this.email_label.BackColor = System.Drawing.Color.Transparent;
+            this.email_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_label.ForeColor = System.Drawing.Color.White;
+            this.email_label.Location = new System.Drawing.Point(92, 22);
+            this.email_label.Name = "email_label";
+            this.email_label.Size = new System.Drawing.Size(62, 18);
+            this.email_label.TabIndex = 55;
+            this.email_label.Text = "E-MAIL";
+            this.email_label.Visible = false;
+            // 
+            // send_email_button
+            // 
+            this.send_email_button.Activecolor = System.Drawing.Color.DarkCyan;
+            this.send_email_button.BackColor = System.Drawing.Color.DarkCyan;
+            this.send_email_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.send_email_button.BorderRadius = 5;
+            this.send_email_button.ButtonText = "Send";
+            this.send_email_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.send_email_button.DisabledColor = System.Drawing.Color.Gray;
+            this.send_email_button.Iconcolor = System.Drawing.Color.Transparent;
+            this.send_email_button.Iconimage = null;
+            this.send_email_button.Iconimage_right = null;
+            this.send_email_button.Iconimage_right_Selected = null;
+            this.send_email_button.Iconimage_Selected = null;
+            this.send_email_button.IconMarginLeft = 0;
+            this.send_email_button.IconMarginRight = 0;
+            this.send_email_button.IconRightVisible = true;
+            this.send_email_button.IconRightZoom = 0D;
+            this.send_email_button.IconVisible = true;
+            this.send_email_button.IconZoom = 90D;
+            this.send_email_button.IsTab = false;
+            this.send_email_button.Location = new System.Drawing.Point(350, 547);
+            this.send_email_button.Margin = new System.Windows.Forms.Padding(5);
+            this.send_email_button.Name = "send_email_button";
+            this.send_email_button.Normalcolor = System.Drawing.Color.DarkCyan;
+            this.send_email_button.OnHovercolor = System.Drawing.Color.LightSeaGreen;
+            this.send_email_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.send_email_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.send_email_button.selected = false;
+            this.send_email_button.Size = new System.Drawing.Size(223, 32);
+            this.send_email_button.TabIndex = 54;
+            this.send_email_button.Text = "Send";
+            this.send_email_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.send_email_button.Textcolor = System.Drawing.Color.White;
+            this.send_email_button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.send_email_button.Click += new System.EventHandler(this.send_email_button_Click);
+            this.send_email_button.Visible = false;
+            // 
+            // email_body
+            // 
+            this.email_body.Location = new System.Drawing.Point(201, 178);
+            this.email_body.Multiline = true;
+            this.email_body.Name = "email_body";
+            this.email_body.Size = new System.Drawing.Size(453, 249);
+            this.email_body.TabIndex = 53;
+            this.email_body.Visible = false;
+            // 
+            // email_subject
+            // 
+            this.email_subject.BackColor = System.Drawing.Color.Gainsboro;
+            this.email_subject.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_subject.Location = new System.Drawing.Point(202, 133);
+            this.email_subject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email_subject.Name = "email_subject";
+            this.email_subject.Size = new System.Drawing.Size(452, 23);
+            this.email_subject.TabIndex = 52;
+            this.email_subject.Visible = false;
+            // 
+            // to_email
+            // 
+            this.to_email.BackColor = System.Drawing.Color.Gainsboro;
+            this.to_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.to_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.to_email.Location = new System.Drawing.Point(202, 90);
+            this.to_email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.to_email.Name = "to_email";
+            this.to_email.Size = new System.Drawing.Size(223, 23);
+            this.to_email.TabIndex = 51;
+            this.to_email.Visible = false;
+            // 
+            // password
+            // 
+            this.password.BackColor = System.Drawing.Color.Gainsboro;
+            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.Location = new System.Drawing.Point(202, 53);
+            this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.password.Name = "password";
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(223, 23);
+            this.password.TabIndex = 50;
+            this.password.Visible = false;
+            // 
+            // email_box
+            // 
+            this.email_box.BackColor = System.Drawing.Color.Gainsboro;
+            this.email_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_box.Location = new System.Drawing.Point(202, 17);
+            this.email_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email_box.Name = "email_box";
+            this.email_box.Size = new System.Drawing.Size(223, 23);
+            this.email_box.TabIndex = 49;
+            this.email_box.Visible = false;
             // 
             // minimize_btn
             // 
@@ -266,6 +452,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).EndInit();
+            this.dash_container.ResumeLayout(false);
+            this.dash_container.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +476,16 @@
         private System.Windows.Forms.Panel drag_panel;
         private System.Windows.Forms.Panel drag_panel2;
         private System.Windows.Forms.Label logout_lbl;
+        private System.Windows.Forms.TextBox email_box;
+        private System.Windows.Forms.TextBox email_subject;
+        private System.Windows.Forms.TextBox to_email;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox email_body;
+        private Bunifu.Framework.UI.BunifuFlatButton send_email_button;
+        private System.Windows.Forms.Label email_to_label;
+        private System.Windows.Forms.Label password_label;
+        private System.Windows.Forms.Label subject_label;
+        private System.Windows.Forms.Label email_label;
+        private System.Windows.Forms.Label body_label;
     }
 }

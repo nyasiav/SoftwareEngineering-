@@ -16,6 +16,7 @@ namespace Connect_A_Bull
     {
         //List of Users in database
         public static List<User> userCollection = new List<User>();
+        public static User rpUser = new User();
 
         public login_page()
         {
@@ -40,6 +41,7 @@ namespace Connect_A_Bull
              * to avoid a Null reference error. Passing this page into next and hiding
              * it.
              */
+            ClearAll();
             register_form reg_form = new register_form(this);
             reg_form.Show();
             this.Hide();
@@ -67,10 +69,19 @@ namespace Connect_A_Bull
              *based on admin privelage*/
             if (Validate_Click(name_box.Text))
             {
-                /*Need to create Admin page and then navigate based on Admin user var*/
-                Dashboard db = new Dashboard(this);
-                db.Show();
-                this.Hide();
+                ClearAll();
+                if (rpUser.RPassword)
+                {
+                    ResetPassword rp = new ResetPassword(this,rpUser);
+                    rp.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    Dashboard db = new Dashboard(this);
+                    db.Show();
+                    this.Hide();
+                }
             }
 
         }
@@ -148,6 +159,7 @@ namespace Connect_A_Bull
 
                     if (ok == 1)
                     {
+                        rpUser = s;
                         return true;
                     }
                 }

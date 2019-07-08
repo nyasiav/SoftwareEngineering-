@@ -7,6 +7,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Connect_A_Bull
 {
@@ -26,12 +27,22 @@ namespace Connect_A_Bull
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                cnn.Execute("insert into User (Fname, Lname, Email, Password, Admin) values (@Fname, @Lname, @Email, @Password, @Admin)", user);
+                cnn.Execute("insert into User (Fname, Lname, Email, Password, Admin, RPassword) values (@Fname, @Lname, @Email, @Password, @Admin, @RPassword)", user);
                 cnn.Close();
             }
         }
 
-        //create funtcion for parsing database
+        public static void UpdateUserPassword(User user)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("update User SET Password = @Password, RPassword = @RPassword WHERE Email = @Email;", new { Email = user.Email, Password = user.Password, RPassword = user.RPassword });
+                //cnn.Execute("update User SET Password = @Password WHERE Email = @Email;",new {Email = user.Email, Password = user.Password});
+                //cnn.Execute("update User SET RPassword = @RPassword WHERE Email = @Email;", new {Email = user.Email, RPassword = user.RPassword });
+                //MessageBox.Show(""+affectedRows);
+            }
+        }
+
 
         private static string LoadConnectionString(string id = "Default")
         {

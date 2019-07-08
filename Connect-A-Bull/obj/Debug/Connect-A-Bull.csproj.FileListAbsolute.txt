@@ -79,7 +79,6 @@ C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\C
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Properties.Resources.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.register_form.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Reminders.resources
-C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.drag_panel.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Resource1.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Settings.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csproj.GenerateResource.cache
@@ -88,3 +87,4 @@ C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\C
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.exe
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ResetPassword.resources
