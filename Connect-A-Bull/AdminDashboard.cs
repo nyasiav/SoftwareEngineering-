@@ -36,7 +36,7 @@ namespace Connect_A_Bull
         Assignments assignments_panel = new Assignments();
         Reminders reminders_panel = new Reminders();
         Chat chat_panel = new Chat();
-        Users user_panel = new Users();
+        ViewUsers user_panel = new ViewUsers();
 
         private void Calendar_btn_Click(object sender, EventArgs e)
         {
