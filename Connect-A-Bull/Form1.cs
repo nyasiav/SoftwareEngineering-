@@ -75,12 +75,20 @@ namespace Connect_A_Bull
                     ResetPassword rp = new ResetPassword(this,rpUser);
                     rp.Show();
                     this.Hide();
-                }
-                else
-                {
-                    Dashboard db = new Dashboard(this);
-                    db.Show();
-                    this.Hide();
+                }else{
+                    if (rpUser.Admin)
+                    {
+                        AdminDashboard ad = new AdminDashboard(this);
+                        //ad.Show();
+                        this.Hide();
+                        ad.Show();
+                    }
+                    else
+                    {
+                        Dashboard db = new Dashboard(this);
+                        db.Show();
+                        this.Hide();
+                    }
                 }
             }
 

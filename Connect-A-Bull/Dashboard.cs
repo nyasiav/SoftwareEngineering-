@@ -118,6 +118,7 @@ namespace Connect_A_Bull
             reminders_panel.Dock = DockStyle.Fill;
             dash_container.Controls.Add(reminders_panel);
         }
+
         private void Chat_btn_Click(object sender, EventArgs e)
         {
             dash_container.Controls.Remove(assignments_panel);
@@ -129,22 +130,22 @@ namespace Connect_A_Bull
             chat_panel.Dock = DockStyle.Fill;
             dash_container.Controls.Add(chat_panel);
 
-            email_label.Visible = true;
-            email_box.Visible = true;
+            //email_label.Visible = true;
+            //email_box.Visible = true;
 
-            password_label.Visible = true;
-            password.Visible = true;
+            //password_label.Visible = true;
+            //password.Visible = true;
 
-            body_label.Visible = true;
-            email_body.Visible = true;
+            //body_label.Visible = true;
+            //email_body.Visible = true;
 
-            email_to_label.Visible = true;
-            to_email.Visible = true;
+            //email_to_label.Visible = true;
+            //to_email.Visible = true;
 
-            subject_label.Visible = true;
-            email_subject.Visible = true;
+            //subject_label.Visible = true;
+            //email_subject.Visible = true;
 
-            send_email_button.Visible = true;
+            //send_email_button.Visible = true;
         }
 
         //variables and functions to allow the window to be moved
@@ -191,7 +192,7 @@ namespace Connect_A_Bull
 
         }
 
-        private void send_email_button_Click(object sender, EventArgs e)
+        /*private void send_email_button_Click(object sender, EventArgs e)
         {
             SmtpClient client = new SmtpClient("smtp.gmail.com");
             client.Port = 587;
@@ -215,22 +216,13 @@ namespace Connect_A_Bull
             client.Send(mail);
             MessageBox.Show("Email sent !!");
             ClearAll();
-        }
+        }*/
 
         private void dragPanel_MouseDown(object sender, MouseEventArgs e)
         {
             drag = true;
             mouse_x = Cursor.Position.X - this.Left;
             mouse_y = Cursor.Position.Y - this.Top;
-        }
-
-        private void ClearAll()
-        {
-            email_body.Clear();
-            email_box.Clear();
-            email_subject.Clear();
-            to_email.Clear();
-            password.Clear();
         }
 
     }

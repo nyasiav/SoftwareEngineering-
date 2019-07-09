@@ -18,7 +18,6 @@ namespace Connect_A_Bull
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 var output = cnn.Query<User>("select * from User", new DynamicParameters());
-                //cnn.Close();
                 return output.ToList();
             }
         }
@@ -28,6 +27,15 @@ namespace Connect_A_Bull
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("insert into User (Fname, Lname, Email, Password, Admin, RPassword) values (@Fname, @Lname, @Email, @Password, @Admin, @RPassword)", user);
+                cnn.Close();
+            }
+        }
+
+        public static void DeletePerson(User user)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("DELETE FROM User WHERE Fname = @Fname AND Lname = @Lname;",new {Fname = user.Fname, Lname = user.Lname});
                 cnn.Close();
             }
         }

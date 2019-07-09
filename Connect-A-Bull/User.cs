@@ -18,6 +18,7 @@ namespace Connect_A_Bull
         public string Password { get; set; }
         public bool Admin { get; set; }
         public bool RPassword { get; set; }
+        public string CanvasToken { get; set; }
 
         public User(string fname, string lname, string email, string password, bool admin,bool rpassword)
         {
@@ -29,6 +30,12 @@ namespace Connect_A_Bull
             RPassword = rpassword;
         }
 
+        public string FullName
+        {
+            get{ 
+                return $"{Fname} {Lname}";
+            }
+        }
         public User()
         {
 
