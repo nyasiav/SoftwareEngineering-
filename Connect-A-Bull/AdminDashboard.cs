@@ -34,31 +34,36 @@ namespace Connect_A_Bull
         //functions to pull up the user control panels for the buttons on the dashboard
         //all of these variables have to be public because the functions need to have access to them in order to close
         //the panel
-        //Calendar calander_panel = new Calendar();
+        Calendar calander_panel = new Calendar();
         Settings settings_panel = new Settings();
-        //Evaluations evaluations_panel = new Evaluations();
-        //Assignments assignments_panel = new Assignments();
-        //Reminders reminders_panel = new Reminders();
-        Chat chat_panel = new Chat();
+        Evaluations evaluations_panel = new Evaluations();
+        Assignments assignments_panel = new Assignments();
+        Reminders reminders_panel = new Reminders();
+        Chat email_panel = new Chat();
         ViewUsers user_panel = new ViewUsers();
 
-        //private void Calendar_btn_Click(object sender, EventArgs e)
-        //{
-        //    dash_container.Controls.Remove(evaluations_panel);
-        //    dash_container.Controls.Remove(assignments_panel);
-        //    dash_container.Controls.Remove(settings_panel);
-        //    dash_container.Controls.Remove(chat_panel);
-        //    dash_container.Controls.Remove(reminders_panel);
-        //    dash_container.Controls.Remove(user_panel);
+        private void Calendar_btn_Click(object sender, EventArgs e)
+        {
+            dash_container.Controls.Remove(evaluations_panel);
+            dash_container.Controls.Remove(assignments_panel);
+            dash_container.Controls.Remove(settings_panel);
+            dash_container.Controls.Remove(email_panel);
+            dash_container.Controls.Remove(reminders_panel);
+            dash_container.Controls.Remove(user_panel);
 
-        //    calander_panel.Dock = DockStyle.Fill;
-        //    dash_container.Controls.Add(calander_panel);
+            calander_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(calander_panel);
 
-        //}
+        }
 
         private void Settings_btn_Click(object sender, EventArgs e)
         {
-            dash_container.Controls.Remove(chat_panel);
+
+            dash_container.Controls.Remove(evaluations_panel);
+            dash_container.Controls.Remove(assignments_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(email_panel);
+            dash_container.Controls.Remove(reminders_panel);
             dash_container.Controls.Remove(user_panel);
 
 
@@ -67,68 +72,87 @@ namespace Connect_A_Bull
 
         }
 
-        //private void Assignments_btn_Click(object sender, EventArgs e)
-        //{
-        //    dash_container.Controls.Remove(evaluations_panel);
-        //    dash_container.Controls.Remove(settings_panel);
-        //    dash_container.Controls.Remove(calander_panel);
-        //    dash_container.Controls.Remove(chat_panel);
-        //    dash_container.Controls.Remove(reminders_panel);
-        //    dash_container.Controls.Remove(user_panel);
-
-
-        //    assignments_panel.Dock = DockStyle.Fill;
-        //    dash_container.Controls.Add(assignments_panel);
-
-        //}
-
-        //private void Evaluations_btn_Click(object sender, EventArgs e)
-        //{
-        //    dash_container.Controls.Remove(assignments_panel);
-        //    dash_container.Controls.Remove(settings_panel);
-        //    dash_container.Controls.Remove(calander_panel);
-        //    dash_container.Controls.Remove(chat_panel);
-        //    dash_container.Controls.Remove(reminders_panel);
-        //    dash_container.Controls.Remove(user_panel);
-
-
-        //    evaluations_panel.Dock = DockStyle.Fill;
-        //    dash_container.Controls.Add(evaluations_panel);
-
-        //}
-
-        //private void Reminders_btn_Click(object sender, EventArgs e)
-        //{
-        //    dash_container.Controls.Remove(assignments_panel);
-        //    dash_container.Controls.Remove(settings_panel);
-        //    dash_container.Controls.Remove(calander_panel);
-        //    dash_container.Controls.Remove(chat_panel);
-        //    dash_container.Controls.Remove(evaluations_panel);
-        //    dash_container.Controls.Remove(user_panel);
-
-
-        //    reminders_panel.Dock = DockStyle.Fill;
-        //    dash_container.Controls.Add(reminders_panel);
-        //}
-
-        private void Email_btn_Click(object sender, EventArgs e)
+        private void Assignments_btn_Click(object sender, EventArgs e)
         {
+            dash_container.Controls.Remove(evaluations_panel);
             dash_container.Controls.Remove(settings_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(email_panel);
+            dash_container.Controls.Remove(reminders_panel);
             dash_container.Controls.Remove(user_panel);
 
 
-            chat_panel.Dock = DockStyle.Fill;
-            dash_container.Controls.Add(chat_panel);
+            assignments_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(assignments_panel);
+
+        }
+
+
+        private void Evaluations_btn_Click(object sender, EventArgs e)
+        {
+            dash_container.Controls.Remove(assignments_panel);
+            dash_container.Controls.Remove(settings_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(email_panel);
+            dash_container.Controls.Remove(reminders_panel);
+            dash_container.Controls.Remove(user_panel);
+
+
+            evaluations_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(evaluations_panel);
+
+        }
+
+        private void Reminders_btn_Click(object sender, EventArgs e)
+        {
+            dash_container.Controls.Remove(assignments_panel);
+            dash_container.Controls.Remove(settings_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(email_panel);
+            dash_container.Controls.Remove(evaluations_panel);
+            dash_container.Controls.Remove(user_panel);
+
+
+            reminders_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(reminders_panel);
+        }
+        private void Chat_btn_Click(object sender, EventArgs e)
+        {
+            dash_container.Controls.Remove(assignments_panel);
+            dash_container.Controls.Remove(settings_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(reminders_panel);
+            dash_container.Controls.Remove(evaluations_panel);
+            dash_container.Controls.Remove(user_panel);
+
+
+            email_panel.Dock = DockStyle.Fill;
+            dash_container.Controls.Add(email_panel);
         }
 
         private void Users_btn_Click(object sender, EventArgs e)
         {
+            dash_container.Controls.Remove(assignments_panel);
             dash_container.Controls.Remove(settings_panel);
-            dash_container.Controls.Remove(chat_panel);
+            dash_container.Controls.Remove(calander_panel);
+            dash_container.Controls.Remove(reminders_panel);
+            dash_container.Controls.Remove(evaluations_panel);
+            dash_container.Controls.Remove(email_panel);
 
 
             user_panel.Dock = DockStyle.Fill;
             dash_container.Controls.Add(user_panel);
+        }
+
+        //log out button
+        private void logout_lbl_Click(object sender, EventArgs e)
+        {
+            //login_page lp = new login_page();
+            this.Hide();
+            login_page lp = new login_page();
+
+            lp.ShowDialog();
+            this.Close();
         }
 
         //variables and functions to allow the window to be moved
@@ -148,16 +172,6 @@ namespace Connect_A_Bull
                 this.Top = Cursor.Position.Y - mouse_y;
 
             }
-        }
-
-        private void logout_lbl_Click(object sender, EventArgs e)
-        {
-            //login_page lp = new login_page();
-            this.Hide();
-            login_page lp = new login_page();
-
-            lp.ShowDialog();
-            this.Close();
         }
 
         private void dragPanel_MouseDown(object sender, MouseEventArgs e)

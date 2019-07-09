@@ -44,7 +44,6 @@ C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Ne
 C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Newtonsoft.Json.xml
 C:\Users\desir\Documents\GitHub\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Calendar.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ForgotPassword.resources
-C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.drag_panel.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Settings.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Assignments.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Evaluations.resources
@@ -88,7 +87,22 @@ C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\C
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.pdb
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.AdminDashboard.resources
-C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Users.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ResetPassword.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.AdminDashboard.resources
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ViewUsers.resources
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Users2.db
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\x86\e_sqlite3.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\x64\e_sqlite3.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Dapper.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLite-net.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.dll
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\Dapper.xml
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\SQLite-net.xml
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.xml
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ResetPassword.resources
+C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ViewUsers.resources
