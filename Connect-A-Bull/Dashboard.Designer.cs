@@ -38,7 +38,6 @@
             this.chat_btn = new System.Windows.Forms.Button();
             this.assignments_btn = new System.Windows.Forms.Button();
             this.calendar_btn = new System.Windows.Forms.Button();
-            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dash_container = new System.Windows.Forms.Panel();
             this.body_label = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.minimize_btn = new System.Windows.Forms.Label();
             this.exit_btn = new System.Windows.Forms.Label();
             this.drag_panel2 = new System.Windows.Forms.Panel();
+            this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.home_btn)).BeginInit();
             this.dash_container.SuspendLayout();
@@ -83,12 +83,13 @@
             // 
             this.logout_lbl.AutoSize = true;
             this.logout_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.logout_lbl.ForeColor = System.Drawing.Color.White;
-            this.logout_lbl.Location = new System.Drawing.Point(130, 742);
+            this.logout_lbl.Location = new System.Drawing.Point(115, 736);
             this.logout_lbl.Name = "logout_lbl";
-            this.logout_lbl.Size = new System.Drawing.Size(59, 17);
+            this.logout_lbl.Size = new System.Drawing.Size(78, 23);
             this.logout_lbl.TabIndex = 8;
-            this.logout_lbl.Text = "Log Out";
+            this.logout_lbl.Text = "log out";
             this.logout_lbl.Click += new System.EventHandler(this.logout_lbl_Click);
             // 
             // drag_panel
@@ -105,7 +106,7 @@
             // 
             this.settings_btn.FlatAppearance.BorderSize = 0;
             this.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settings_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.settings_btn.ForeColor = System.Drawing.Color.White;
             this.settings_btn.Location = new System.Drawing.Point(4, 599);
             this.settings_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -120,7 +121,7 @@
             // 
             this.reminders_btn.FlatAppearance.BorderSize = 0;
             this.reminders_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reminders_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reminders_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.reminders_btn.ForeColor = System.Drawing.Color.White;
             this.reminders_btn.Location = new System.Drawing.Point(4, 526);
             this.reminders_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -135,7 +136,7 @@
             // 
             this.eval_btn.FlatAppearance.BorderSize = 0;
             this.eval_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eval_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eval_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.eval_btn.ForeColor = System.Drawing.Color.White;
             this.eval_btn.Location = new System.Drawing.Point(4, 452);
             this.eval_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -150,7 +151,7 @@
             // 
             this.chat_btn.FlatAppearance.BorderSize = 0;
             this.chat_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chat_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.chat_btn.ForeColor = System.Drawing.Color.White;
             this.chat_btn.Location = new System.Drawing.Point(4, 378);
             this.chat_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -165,7 +166,7 @@
             // 
             this.assignments_btn.FlatAppearance.BorderSize = 0;
             this.assignments_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.assignments_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignments_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.assignments_btn.ForeColor = System.Drawing.Color.White;
             this.assignments_btn.Location = new System.Drawing.Point(4, 304);
             this.assignments_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -180,7 +181,7 @@
             // 
             this.calendar_btn.FlatAppearance.BorderSize = 0;
             this.calendar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calendar_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calendar_btn.ForeColor = System.Drawing.Color.White;
             this.calendar_btn.Location = new System.Drawing.Point(4, 230);
             this.calendar_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -190,20 +191,6 @@
             this.calendar_btn.Text = "calendar";
             this.calendar_btn.UseVisualStyleBackColor = true;
             this.calendar_btn.Click += new System.EventHandler(this.Calendar_btn_Click);
-            // 
-            // home_btn
-            // 
-            this.home_btn.BackColor = System.Drawing.Color.Transparent;
-            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
-            this.home_btn.ImageActive = null;
-            this.home_btn.Location = new System.Drawing.Point(41, 36);
-            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(235, 92);
-            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.home_btn.TabIndex = 0;
-            this.home_btn.TabStop = false;
-            this.home_btn.Zoom = 10;
             // 
             // bunifuElipse1
             // 
@@ -432,6 +419,20 @@
             this.drag_panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
             this.drag_panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
             this.drag_panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
+            // 
+            // home_btn
+            // 
+            this.home_btn.BackColor = System.Drawing.Color.Transparent;
+            this.home_btn.Image = global::Connect_A_Bull.Resource1.logo2_blue;
+            this.home_btn.ImageActive = null;
+            this.home_btn.Location = new System.Drawing.Point(41, 36);
+            this.home_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.home_btn.Name = "home_btn";
+            this.home_btn.Size = new System.Drawing.Size(235, 92);
+            this.home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home_btn.TabIndex = 0;
+            this.home_btn.TabStop = false;
+            this.home_btn.Zoom = 10;
             // 
             // Dashboard
             // 
