@@ -89,3 +89,4 @@ C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\C
 C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect-A-Bull.csprojAssemblyReference.cache
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.AdminDashboard.resources
 C:\Users\vazqu\Desktop\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.Users.resources
+C:\Users\Codi\Desktop\Summer 19\Software Engineering\Proj\SoftwareEngineering-\Connect-A-Bull\obj\Debug\Connect_A_Bull.ResetPassword.resources
