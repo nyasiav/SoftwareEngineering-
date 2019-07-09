@@ -71,11 +71,11 @@
             // 
             this.logout_lbl.AutoSize = true;
             this.logout_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.logout_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_lbl.ForeColor = System.Drawing.Color.White;
             this.logout_lbl.Location = new System.Drawing.Point(115, 736);
             this.logout_lbl.Name = "logout_lbl";
-            this.logout_lbl.Size = new System.Drawing.Size(77, 25);
+            this.logout_lbl.Size = new System.Drawing.Size(78, 23);
             this.logout_lbl.TabIndex = 8;
             this.logout_lbl.Text = "log out";
             this.logout_lbl.Click += new System.EventHandler(this.logout_lbl_Click);
@@ -94,7 +94,7 @@
             // 
             this.settings_btn.FlatAppearance.BorderSize = 0;
             this.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.settings_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.settings_btn.ForeColor = System.Drawing.Color.White;
             this.settings_btn.Location = new System.Drawing.Point(4, 599);
             this.settings_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -109,7 +109,7 @@
             // 
             this.reminders_btn.FlatAppearance.BorderSize = 0;
             this.reminders_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reminders_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.reminders_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.reminders_btn.ForeColor = System.Drawing.Color.White;
             this.reminders_btn.Location = new System.Drawing.Point(4, 526);
             this.reminders_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -124,7 +124,7 @@
             // 
             this.eval_btn.FlatAppearance.BorderSize = 0;
             this.eval_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eval_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.eval_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.eval_btn.ForeColor = System.Drawing.Color.White;
             this.eval_btn.Location = new System.Drawing.Point(4, 452);
             this.eval_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -139,7 +139,7 @@
             // 
             this.chat_btn.FlatAppearance.BorderSize = 0;
             this.chat_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.chat_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.chat_btn.ForeColor = System.Drawing.Color.White;
             this.chat_btn.Location = new System.Drawing.Point(4, 378);
             this.chat_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -154,7 +154,7 @@
             // 
             this.assignments_btn.FlatAppearance.BorderSize = 0;
             this.assignments_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.assignments_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.assignments_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.assignments_btn.ForeColor = System.Drawing.Color.White;
             this.assignments_btn.Location = new System.Drawing.Point(4, 304);
             this.assignments_btn.Margin = new System.Windows.Forms.Padding(4);
@@ -169,7 +169,7 @@
             // 
             this.calendar_btn.FlatAppearance.BorderSize = 0;
             this.calendar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calendar_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.calendar_btn.ForeColor = System.Drawing.Color.White;
             this.calendar_btn.Location = new System.Drawing.Point(4, 230);
             this.calendar_btn.Margin = new System.Windows.Forms.Padding(4);

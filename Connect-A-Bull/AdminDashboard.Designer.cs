@@ -30,10 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.users_btn = new System.Windows.Forms.Button();
+            this.settings_btn = new System.Windows.Forms.Button();
+            this.reminders_btn = new System.Windows.Forms.Button();
+            this.eval_btn = new System.Windows.Forms.Button();
+            this.chat_btn = new System.Windows.Forms.Button();
+            this.assignments_btn = new System.Windows.Forms.Button();
+            this.calendar_btn = new System.Windows.Forms.Button();
             this.logout_lbl = new System.Windows.Forms.Label();
             this.drag_panel = new System.Windows.Forms.Panel();
-            this.settings_btn = new System.Windows.Forms.Button();
-            this.email_btn = new System.Windows.Forms.Button();
             this.home_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.drag_panel2 = new System.Windows.Forms.Panel();
             this.dash_container = new System.Windows.Forms.Panel();
@@ -47,10 +51,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(132)))));
             this.panel1.Controls.Add(this.users_btn);
+            this.panel1.Controls.Add(this.settings_btn);
+            this.panel1.Controls.Add(this.reminders_btn);
+            this.panel1.Controls.Add(this.eval_btn);
+            this.panel1.Controls.Add(this.chat_btn);
+            this.panel1.Controls.Add(this.assignments_btn);
+            this.panel1.Controls.Add(this.calendar_btn);
             this.panel1.Controls.Add(this.logout_lbl);
             this.panel1.Controls.Add(this.drag_panel);
-            this.panel1.Controls.Add(this.settings_btn);
-            this.panel1.Controls.Add(this.email_btn);
             this.panel1.Controls.Add(this.home_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -63,26 +71,109 @@
             // 
             this.users_btn.FlatAppearance.BorderSize = 0;
             this.users_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.users_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.users_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.users_btn.ForeColor = System.Drawing.Color.White;
-            this.users_btn.Location = new System.Drawing.Point(4, 376);
+            this.users_btn.Location = new System.Drawing.Point(4, 553);
             this.users_btn.Margin = new System.Windows.Forms.Padding(4);
             this.users_btn.Name = "users_btn";
             this.users_btn.Size = new System.Drawing.Size(311, 53);
-            this.users_btn.TabIndex = 9;
-            this.users_btn.Text = "Users";
+            this.users_btn.TabIndex = 15;
+            this.users_btn.Text = "users";
             this.users_btn.UseVisualStyleBackColor = true;
-            this.users_btn.Click += new System.EventHandler(this.Users_btn_Click);
+            // 
+            // settings_btn
+            // 
+            this.settings_btn.FlatAppearance.BorderSize = 0;
+            this.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.settings_btn.ForeColor = System.Drawing.Color.White;
+            this.settings_btn.Location = new System.Drawing.Point(4, 626);
+            this.settings_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.settings_btn.Name = "settings_btn";
+            this.settings_btn.Size = new System.Drawing.Size(311, 53);
+            this.settings_btn.TabIndex = 14;
+            this.settings_btn.Text = "settings";
+            this.settings_btn.UseVisualStyleBackColor = true;
+            // 
+            // reminders_btn
+            // 
+            this.reminders_btn.FlatAppearance.BorderSize = 0;
+            this.reminders_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reminders_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.reminders_btn.ForeColor = System.Drawing.Color.White;
+            this.reminders_btn.Location = new System.Drawing.Point(4, 479);
+            this.reminders_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.reminders_btn.Name = "reminders_btn";
+            this.reminders_btn.Size = new System.Drawing.Size(311, 53);
+            this.reminders_btn.TabIndex = 13;
+            this.reminders_btn.Text = "reminders";
+            this.reminders_btn.UseVisualStyleBackColor = true;
+            // 
+            // eval_btn
+            // 
+            this.eval_btn.FlatAppearance.BorderSize = 0;
+            this.eval_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eval_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.eval_btn.ForeColor = System.Drawing.Color.White;
+            this.eval_btn.Location = new System.Drawing.Point(4, 405);
+            this.eval_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.eval_btn.Name = "eval_btn";
+            this.eval_btn.Size = new System.Drawing.Size(311, 53);
+            this.eval_btn.TabIndex = 12;
+            this.eval_btn.Text = "evaluations";
+            this.eval_btn.UseVisualStyleBackColor = true;
+            // 
+            // chat_btn
+            // 
+            this.chat_btn.FlatAppearance.BorderSize = 0;
+            this.chat_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chat_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.chat_btn.ForeColor = System.Drawing.Color.White;
+            this.chat_btn.Location = new System.Drawing.Point(4, 331);
+            this.chat_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.chat_btn.Name = "chat_btn";
+            this.chat_btn.Size = new System.Drawing.Size(311, 53);
+            this.chat_btn.TabIndex = 11;
+            this.chat_btn.Text = "email";
+            this.chat_btn.UseVisualStyleBackColor = true;
+            // 
+            // assignments_btn
+            // 
+            this.assignments_btn.FlatAppearance.BorderSize = 0;
+            this.assignments_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.assignments_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.assignments_btn.ForeColor = System.Drawing.Color.White;
+            this.assignments_btn.Location = new System.Drawing.Point(4, 257);
+            this.assignments_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.assignments_btn.Name = "assignments_btn";
+            this.assignments_btn.Size = new System.Drawing.Size(311, 53);
+            this.assignments_btn.TabIndex = 10;
+            this.assignments_btn.Text = "assignments";
+            this.assignments_btn.UseVisualStyleBackColor = true;
+            // 
+            // calendar_btn
+            // 
+            this.calendar_btn.FlatAppearance.BorderSize = 0;
+            this.calendar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calendar_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.calendar_btn.ForeColor = System.Drawing.Color.White;
+            this.calendar_btn.Location = new System.Drawing.Point(4, 183);
+            this.calendar_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.calendar_btn.Name = "calendar_btn";
+            this.calendar_btn.Size = new System.Drawing.Size(311, 53);
+            this.calendar_btn.TabIndex = 9;
+            this.calendar_btn.Text = "calendar";
+            this.calendar_btn.UseVisualStyleBackColor = true;
             // 
             // logout_lbl
             // 
             this.logout_lbl.AutoSize = true;
             this.logout_lbl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.logout_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.logout_lbl.ForeColor = System.Drawing.Color.White;
             this.logout_lbl.Location = new System.Drawing.Point(124, 734);
             this.logout_lbl.Name = "logout_lbl";
-            this.logout_lbl.Size = new System.Drawing.Size(77, 25);
+            this.logout_lbl.Size = new System.Drawing.Size(78, 23);
             this.logout_lbl.TabIndex = 8;
             this.logout_lbl.Text = "log out";
             this.logout_lbl.Click += new System.EventHandler(this.logout_lbl_Click);
@@ -96,36 +187,6 @@
             this.drag_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseDown);
             this.drag_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseMove);
             this.drag_panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dragPanel_MouseUp);
-            // 
-            // settings_btn
-            // 
-            this.settings_btn.FlatAppearance.BorderSize = 0;
-            this.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.settings_btn.ForeColor = System.Drawing.Color.White;
-            this.settings_btn.Location = new System.Drawing.Point(4, 426);
-            this.settings_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.settings_btn.Name = "settings_btn";
-            this.settings_btn.Size = new System.Drawing.Size(311, 53);
-            this.settings_btn.TabIndex = 6;
-            this.settings_btn.Text = "Settings";
-            this.settings_btn.UseVisualStyleBackColor = true;
-            this.settings_btn.Click += new System.EventHandler(this.Settings_btn_Click);
-            // 
-            // email_btn
-            // 
-            this.email_btn.FlatAppearance.BorderSize = 0;
-            this.email_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.email_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.email_btn.ForeColor = System.Drawing.Color.White;
-            this.email_btn.Location = new System.Drawing.Point(4, 328);
-            this.email_btn.Margin = new System.Windows.Forms.Padding(4);
-            this.email_btn.Name = "email_btn";
-            this.email_btn.Size = new System.Drawing.Size(311, 53);
-            this.email_btn.TabIndex = 3;
-            this.email_btn.Text = "Email";
-            this.email_btn.UseVisualStyleBackColor = true;
-            this.email_btn.Click += new System.EventHandler(this.Email_btn_Click);
             // 
             // home_btn
             // 
@@ -217,13 +278,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label logout_lbl;
         private System.Windows.Forms.Panel drag_panel;
-        private System.Windows.Forms.Button settings_btn;
-        private System.Windows.Forms.Button email_btn;
         private Bunifu.Framework.UI.BunifuImageButton home_btn;
         private System.Windows.Forms.Panel drag_panel2;
         private System.Windows.Forms.Panel dash_container;
         private System.Windows.Forms.Label minimize_btn;
         private System.Windows.Forms.Label exit_btn;
+        private System.Windows.Forms.Button settings_btn;
+        private System.Windows.Forms.Button reminders_btn;
+        private System.Windows.Forms.Button eval_btn;
+        private System.Windows.Forms.Button chat_btn;
+        private System.Windows.Forms.Button assignments_btn;
+        private System.Windows.Forms.Button calendar_btn;
         private System.Windows.Forms.Button users_btn;
     }
 }
