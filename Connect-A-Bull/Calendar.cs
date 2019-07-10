@@ -11,16 +11,28 @@ using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections;
+using System.Text.RegularExpressions;
+
 
 namespace Connect_A_Bull
 {
     public partial class Calendar : UserControl
     {
         DateTime pickedDate = new DateTime();
+        DataTable fullEvents = new DataTable();
+        int fullEventCount = 0;
+        string printToTextBox = "";
 
         public Calendar()
         {
             InitializeComponent();
+            fullEvents.Columns.Add("Title", typeof(string));
+            fullEvents.Columns.Add("Date", typeof(string));
+            fullEvents.Columns.Add("Description", typeof(string));
+            fullEvents.Columns.Add("EventId", typeof(int));
+            fullEvents.Columns.Add("CourseCode", typeof(string));
+            fullEvents.Columns.Add("CourseName", typeof(string));
+
 
         }
 
@@ -28,9 +40,11 @@ namespace Connect_A_Bull
         {
             EraseOldEvents();
             GetNewEvents();
-            
+
             treeView1.ExpandAll();
             treeView1.Nodes[0].EnsureVisible();
+
+
         }
 
         private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -38,6 +52,8 @@ namespace Connect_A_Bull
             pickedDate = dateTimePicker.Value;
             EraseOldEvents();
             GetNewEvents();
+            treeView1.ExpandAll();
+            treeView1.Nodes[0].EnsureVisible();
         }
 
         private void GetNewEvents()
@@ -73,17 +89,15 @@ namespace Connect_A_Bull
 
             ArrayList courseIDs = new ArrayList();
             ArrayList eventDates = new ArrayList();
-            DataTable fullEvents = new DataTable();
-            fullEvents.Columns.Add("Title", typeof(string));
-            fullEvents.Columns.Add("Date", typeof(string));
-            fullEvents.Columns.Add("Description", typeof(string));
-            int fullEventCount = 0;
+
+
+
 
             string printTextBox = "";
             string printTextBox2 = "";
-            
 
-   
+
+
             //iterates over every course
             for (int i = 0; i < jsonObjects.Count; i++)
             {
@@ -104,10 +118,8 @@ namespace Connect_A_Bull
                     courseCode = "";
                     courseCode = rawAbreviation + " " + rawNumber;
                 }
-                tempCourse += courseCode;
+
                 //tempCourse += " " + courseID;
-                coursesCheckListBox.Items.Add(tempCourse);
-                printTextBox2 += tempCourse + "\r\n";
 
                 //Get events and assignments using current courseID
                 string eventFullLink = eventLinkPart1
@@ -129,30 +141,45 @@ namespace Connect_A_Bull
                 JArray jsonArray2 = JArray.Parse(json_data2);
                 var jsonObjects2 = jsonArray2.OfType<JObject>().ToList();
 
-                
+
                 //Iterates over all events for given course
                 for (int j = 0; j < jsonObjects2.Count; j++)
                 {
-                    
-                    //2d array, First Event is 1 array - [Event Title, Event Date/Due Date, Description]
-                    object[] tempEvent = new object[3];
+
+                    //2d array, First Event is 1 array - [Event Title, Event Date/Due Date, Description, EventID]
+                    object[] tempEvent = new object[6];
 
                     string titleEvent = jsonObjects2[j]["title"].ToString();
                     tempEvent[0] = titleEvent;
                     printTextBox += titleEvent + "\r\n";
 
                     string dateEvent = jsonObjects2[j]["all_day_date"].ToString();
-                    tempEvent[1] = dateEvent;
+                    string changedDateEvent = dateEvent.Substring(5, 2) + "-" + dateEvent.Substring(8, 2) + "-" + dateEvent.Substring(0, 4);
+                    tempEvent[1] = changedDateEvent;
                     printTextBox += dateEvent + "\r\n";
 
-                    string descriptionEvent = jsonObjects2[j]["description"].ToString();
-                    tempEvent[2] = descriptionEvent;
+                    string descriptionEvent = (string)jsonObjects2[j]["description"];
+                    string newDescription = Regex.Replace(descriptionEvent, "<.*?>", String.Empty);
+
+
+
+
+
+                    
+                    tempEvent[2] = newDescription;
+
+
+
                     fullEventCount++;
+
+                    tempEvent[3] = fullEventCount;
+                    tempEvent[4] = courseCode;
+                    tempEvent[5] = tempCourse;
 
                     fullEvents.Rows.Add(tempEvent);
                     //eventDates holds all of the event dates,
                     //knows what Dates to display in tree view
-                    string tempEventDate = dateEvent; 
+                    string tempEventDate = changedDateEvent;
                     eventDates.Add(tempEventDate);
 
                     //printTextBox += "should match : " +  j + " " + fullEvents.Rows[courseWithEvents][0] + ", " + fullEvents.Rows[courseWithEvents][1] + "\r\n";
@@ -179,7 +206,7 @@ namespace Connect_A_Bull
 
             //sorts the dates
             sortedEventDates.Sort();
-            
+
             for (int j = 0; j < sortedEventDates.Count; j++)
             {
                 treeView1.Nodes.Add((string)sortedEventDates[j]);
@@ -195,24 +222,28 @@ namespace Connect_A_Bull
                 int a = 0;
                 foreach (TreeNode n in treeView1.Nodes)
                 {
+                    int b = 0;
                     string compareDate = (string)fullEvents.Rows[j][1];
                     forAddingNodes += "Does \"" + compareDate + "\" equal \"" + n.Text + "\" ?\r\n";
-                    if(string.Compare(compareDate, n.Text) == 0)
+                    if (string.Compare(compareDate, n.Text) == 0)
                     {
-                        treeView1.Nodes[a].Nodes.Add((string)fullEvents.Rows[j][0]);
+                        TreeNode forAddingTag = treeView1.Nodes[a].Nodes.Add((string)fullEvents.Rows[j][0]);
+                        forAddingTag.Tag = fullEvents.Rows[j][3];
+                        b++;
                     }
                     a++;
                 }
-                
+
             }
             //textBox1.Text = forAddingNodes;
+            textBox1.Text = printToTextBox;
 
             int everyDate = 0;
-            foreach(TreeNode n in treeView1.Nodes)
+            foreach (TreeNode n in treeView1.Nodes)
             {
                 int b = 0;
 
-                foreach(TreeNode x in n.Nodes)
+                foreach (TreeNode x in n.Nodes)
                 {
                     treeView1.Nodes[everyDate].Nodes[b].NodeFont = new Font("Microsoft Sans Serif", 12);
                     treeView1.Nodes[everyDate].Nodes[b].BackColor = Color.FromArgb(0, 120, 158); ;
@@ -222,12 +253,63 @@ namespace Connect_A_Bull
                 everyDate++;
             }
 
+            if (treeView1.Nodes.Count == 0)
+            {
+                treeView1.Nodes.Add("No events or assignments right now!   ");
+                treeView1.Nodes[0].NodeFont = new Font("Microsoft Sans Serif", 14);
+                treeView1.Nodes[0].BackColor = Color.FromArgb(0, 100, 132);
+                treeView1.Nodes[0].ForeColor = Color.White;
+                treeView1.Nodes[0].Tag = 10000;
+            }
+
+
         }
 
         private void EraseOldEvents()
         {
-            coursesCheckListBox.Items.Clear();
+            fullEvents.Clear();
             treeView1.Nodes.Clear();
+            fullEventCount = 0;
+        }
+
+
+
+        private void TreeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (treeView1.SelectedNode.Level == 1)
+            {
+                string selectedNodeTitle = (string)treeView1.SelectedNode.Text;
+                int eventID = (int)treeView1.SelectedNode.Tag;
+                
+                foreach(DataRow row in fullEvents.Rows)
+                {
+                    int currentEvent = (int)row["EventID"];
+                    if (currentEvent == eventID)
+                    {
+                        printToTextBox = selectedNodeTitle + "\r\n"
+                                       + (string)row["CourseName"] + (string)row["CourseCode"] + "\r\n"
+                                       + "Due on: " + (string)row["Date"] + "\r\n"
+                                       + (string)row["Description"];
+                    }
+                }
+                /*
+
+                for(int i = 0; i < fullEvents.Rows.Count; i++)
+                {
+                    int currentEvent = (int)fullEvents.Rows[i][3];
+                    if (currentEvent == eventID)
+                    {
+                        printToTextBox += selectedNodeTitle + "\r\n";
+                        printToTextBox += (string)fullEvents.Rows[i][5] + (string)fullEvents.Rows[i][4] + "\r\n";
+                        printToTextBox += "Due on: " + (string)fullEvents.Rows[i][1] + "\r\n";
+                        printToTextBox += (string)fullEvents.Rows[i][2];
+                    }
+                }*/
+
+
+                textBox1.Text = printToTextBox;
+            }
+
         }
     }
 }
