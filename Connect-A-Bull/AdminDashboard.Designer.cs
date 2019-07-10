@@ -80,6 +80,7 @@
             this.users_btn.TabIndex = 15;
             this.users_btn.Text = "users";
             this.users_btn.UseVisualStyleBackColor = true;
+            this.users_btn.Click += new System.EventHandler(this.Users_btn_Click);
             // 
             // settings_btn
             // 
@@ -94,6 +95,7 @@
             this.settings_btn.TabIndex = 14;
             this.settings_btn.Text = "settings";
             this.settings_btn.UseVisualStyleBackColor = true;
+            this.settings_btn.Click += new System.EventHandler(this.Settings_btn_Click);
             // 
             // reminders_btn
             // 
@@ -108,6 +110,7 @@
             this.reminders_btn.TabIndex = 13;
             this.reminders_btn.Text = "reminders";
             this.reminders_btn.UseVisualStyleBackColor = true;
+            this.reminders_btn.Click += new System.EventHandler(this.Reminders_btn_Click);
             // 
             // eval_btn
             // 
@@ -122,6 +125,7 @@
             this.eval_btn.TabIndex = 12;
             this.eval_btn.Text = "evaluations";
             this.eval_btn.UseVisualStyleBackColor = true;
+            this.eval_btn.Click += new System.EventHandler(this.Evaluations_btn_Click);
             // 
             // chat_btn
             // 
@@ -136,6 +140,7 @@
             this.chat_btn.TabIndex = 11;
             this.chat_btn.Text = "email";
             this.chat_btn.UseVisualStyleBackColor = true;
+            this.chat_btn.Click += new System.EventHandler(this.Chat_btn_Click);
             // 
             // assignments_btn
             // 
@@ -150,6 +155,7 @@
             this.assignments_btn.TabIndex = 10;
             this.assignments_btn.Text = "assignments";
             this.assignments_btn.UseVisualStyleBackColor = true;
+            this.assignments_btn.Click += new System.EventHandler(this.Assignments_btn_Click);
             // 
             // calendar_btn
             // 
@@ -164,6 +170,7 @@
             this.calendar_btn.TabIndex = 9;
             this.calendar_btn.Text = "calendar";
             this.calendar_btn.UseVisualStyleBackColor = true;
+            this.calendar_btn.Click += new System.EventHandler(this.Calendar_btn_Click);
             // 
             // logout_lbl
             // 
@@ -288,7 +295,7 @@
         private System.Windows.Forms.Button eval_btn;
         private System.Windows.Forms.Button chat_btn;
         private System.Windows.Forms.Button assignments_btn;
-        private System.Windows.Forms.Button calendar_btn;
         private System.Windows.Forms.Button users_btn;
+        private System.Windows.Forms.Button calendar_btn;
     }
 }

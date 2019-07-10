@@ -111,14 +111,29 @@ namespace Connect_A_Bull
                 string tempCourse = "";
                 tempCourse += jsonObjects[i]["name"].ToString();
                 tempCourse += " - ";
+
+
                 string rawCourseCode = jsonObjects[i]["course_code"].ToString();
-                string rawAbreviation = rawCourseCode.Substring(0, 3);
-                string rawNumber = rawCourseCode.Substring(3, 4);
+                string rawAbbreviation = "";
+                string rawNumber = "";
+                if(rawCourseCode.Length > 6)
+                {
+                    rawAbbreviation = rawCourseCode.Substring(0, 3);
+                    rawNumber = rawCourseCode.Substring(3, 4);
+                }
+                else
+                {
+                    rawAbbreviation = "AAA";
+                    rawNumber = "0000";
+                }
+
+
+
                 string courseCode = "No Course Code";
                 if (rawNumber[0] >= '0' && rawNumber[0] <= '9')
                 {
                     courseCode = "";
-                    courseCode = rawAbreviation + " " + rawNumber;
+                    courseCode = rawAbbreviation + " " + rawNumber;
                 }
 
                 //tempCourse += " " + courseID;
