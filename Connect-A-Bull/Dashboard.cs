@@ -55,14 +55,22 @@ namespace Connect_A_Bull
 
         private void Calendar_btn_Click(object sender, EventArgs e)
         {
-            dash_container.Controls.Remove(evaluations_panel);
-            dash_container.Controls.Remove(assignments_panel);
-            dash_container.Controls.Remove(settings_panel);
-            dash_container.Controls.Remove(chat_panel);
-            dash_container.Controls.Remove(reminders_panel);
+            if (login_page.rpUser.CanvasToken == null)
+            {
+                MessageBox.Show("Can't open the Calendar without Canvas Access. Go to Settings to add your Canvas token");
+            }
+            else
+            {
+                dash_container.Controls.Remove(evaluations_panel);
+                dash_container.Controls.Remove(assignments_panel);
+                dash_container.Controls.Remove(settings_panel);
+                dash_container.Controls.Remove(chat_panel);
+                dash_container.Controls.Remove(reminders_panel);
 
-            calander_panel.Dock = DockStyle.Fill;
-            dash_container.Controls.Add(calander_panel);
+                calander_panel.Dock = DockStyle.Fill;
+                dash_container.Controls.Add(calander_panel);
+            }
+
 
         }
 

@@ -74,9 +74,11 @@ namespace Connect_A_Bull
 
             string json_data = "";
             string canvasLinkCourses = "https://canvas.instructure.com/api/v1/users/self/courses?enrollment_state=active&access_token=";
-            string brittanyCanvas = "13~rIzSCEWS3pJVUHjbhaFhp2Y1c5owCk3WmQ6Iqr1o3MvTGS6FOFONQZjfsJgsPiNA";
-            string desCanvas = "13~UR54ZnsYuFhKMGipOJ9kn8yZX9gpd5IYOAp0zpYVYmZRC52GdZupc1qj4q59j8Qa";
-            string chosenUser = brittanyCanvas;
+
+            string chosenUser = login_page.rpUser.CanvasToken;
+
+
+
             string userCourseLink = canvasLinkCourses + chosenUser;
 
             using (WebClient wc = new WebClient())
