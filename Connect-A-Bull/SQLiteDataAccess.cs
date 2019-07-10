@@ -45,12 +45,17 @@ namespace Connect_A_Bull
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("update User SET Password = @Password, RPassword = @RPassword WHERE Email = @Email;", new { Email = user.Email, Password = user.Password, RPassword = user.RPassword });
-                //cnn.Execute("update User SET Password = @Password WHERE Email = @Email;",new {Email = user.Email, Password = user.Password});
-                //cnn.Execute("update User SET RPassword = @RPassword WHERE Email = @Email;", new {Email = user.Email, RPassword = user.RPassword });
-                //MessageBox.Show(""+affectedRows);
+             
             }
         }
 
+        public static void UpdateUserCanvasToken(User user)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("update User SET CanvasToken = @CanvasToken WHERE Email = @Email;", new { Email = user.Email, CanvasToken = user.CanvasToken });
+            }
+        }
 
         private static string LoadConnectionString(string id = "Default")
         {
