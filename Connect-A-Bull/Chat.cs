@@ -104,9 +104,16 @@ namespace Connect_A_Bull
             email_box.Clear();
             password.Clear();
         }
+
+        private void dash_container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         private void browse_Button_Click(object sender, EventArgs e)
         {
-            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 file_attactment.Text = openFileDialog1.FileName;
             }

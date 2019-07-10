@@ -28,7 +28,7 @@ namespace Connect_A_Bull
         {
             EraseOldEvents();
             GetNewEvents();
-            
+
             treeView1.ExpandAll();
             treeView1.Nodes[0].EnsureVisible();
         }
@@ -81,9 +81,9 @@ namespace Connect_A_Bull
 
             string printTextBox = "";
             string printTextBox2 = "";
-            
 
-   
+
+
             //iterates over every course
             for (int i = 0; i < jsonObjects.Count; i++)
             {
@@ -129,11 +129,11 @@ namespace Connect_A_Bull
                 JArray jsonArray2 = JArray.Parse(json_data2);
                 var jsonObjects2 = jsonArray2.OfType<JObject>().ToList();
 
-                
+
                 //Iterates over all events for given course
                 for (int j = 0; j < jsonObjects2.Count; j++)
                 {
-                    
+
                     //2d array, First Event is 1 array - [Event Title, Event Date/Due Date, Description]
                     object[] tempEvent = new object[3];
 
@@ -152,7 +152,7 @@ namespace Connect_A_Bull
                     fullEvents.Rows.Add(tempEvent);
                     //eventDates holds all of the event dates,
                     //knows what Dates to display in tree view
-                    string tempEventDate = dateEvent; 
+                    string tempEventDate = dateEvent;
                     eventDates.Add(tempEventDate);
 
                     //printTextBox += "should match : " +  j + " " + fullEvents.Rows[courseWithEvents][0] + ", " + fullEvents.Rows[courseWithEvents][1] + "\r\n";
@@ -179,7 +179,7 @@ namespace Connect_A_Bull
 
             //sorts the dates
             sortedEventDates.Sort();
-            
+
             for (int j = 0; j < sortedEventDates.Count; j++)
             {
                 treeView1.Nodes.Add((string)sortedEventDates[j]);
@@ -197,22 +197,22 @@ namespace Connect_A_Bull
                 {
                     string compareDate = (string)fullEvents.Rows[j][1];
                     forAddingNodes += "Does \"" + compareDate + "\" equal \"" + n.Text + "\" ?\r\n";
-                    if(string.Compare(compareDate, n.Text) == 0)
+                    if (string.Compare(compareDate, n.Text) == 0)
                     {
                         treeView1.Nodes[a].Nodes.Add((string)fullEvents.Rows[j][0]);
                     }
                     a++;
                 }
-                
+
             }
             //textBox1.Text = forAddingNodes;
 
             int everyDate = 0;
-            foreach(TreeNode n in treeView1.Nodes)
+            foreach (TreeNode n in treeView1.Nodes)
             {
                 int b = 0;
 
-                foreach(TreeNode x in n.Nodes)
+                foreach (TreeNode x in n.Nodes)
                 {
                     treeView1.Nodes[everyDate].Nodes[b].NodeFont = new Font("Microsoft Sans Serif", 12);
                     treeView1.Nodes[everyDate].Nodes[b].BackColor = Color.FromArgb(0, 120, 158); ;

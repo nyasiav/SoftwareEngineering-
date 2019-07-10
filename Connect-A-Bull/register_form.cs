@@ -111,7 +111,7 @@ namespace Connect_A_Bull
                 {
                     if(email_txtbox.Text == s.Email)
                     {
-                        MessageBox.Show("This email already exist, please reset your password if you do not remeber it.");
+                        MessageBox.Show("This email already exist, please reset your password if you do not remember it.");
                         ClearEmail();
                         ClearPass();
                         return false;                    

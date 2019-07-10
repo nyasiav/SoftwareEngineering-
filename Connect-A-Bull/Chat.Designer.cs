@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dash_container = new System.Windows.Forms.Panel();
+            this.browse_Button = new Bunifu.Framework.UI.BunifuFlatButton();
             this.attachment_label = new System.Windows.Forms.Label();
             this.file_attactment = new System.Windows.Forms.TextBox();
             this.body_label = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             // 
             // dash_container
             // 
+            this.dash_container.Controls.Add(this.browse_Button);
             this.dash_container.Controls.Add(this.attachment_label);
             this.dash_container.Controls.Add(this.file_attactment);
             this.dash_container.Controls.Add(this.body_label);
@@ -67,16 +69,55 @@
             this.dash_container.Name = "dash_container";
             this.dash_container.Size = new System.Drawing.Size(1036, 707);
             this.dash_container.TabIndex = 2;
+            this.dash_container.Paint += new System.Windows.Forms.PaintEventHandler(this.dash_container_Paint);
+            // 
+            // browse_Button
+            // 
+            this.browse_Button.Activecolor = System.Drawing.Color.DarkCyan;
+            this.browse_Button.BackColor = System.Drawing.Color.DarkCyan;
+            this.browse_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.browse_Button.BorderRadius = 5;
+            this.browse_Button.ButtonText = "BROWSE";
+            this.browse_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.browse_Button.DisabledColor = System.Drawing.Color.Gray;
+            this.browse_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.browse_Button.Iconcolor = System.Drawing.Color.Transparent;
+            this.browse_Button.Iconimage = null;
+            this.browse_Button.Iconimage_right = null;
+            this.browse_Button.Iconimage_right_Selected = null;
+            this.browse_Button.Iconimage_Selected = null;
+            this.browse_Button.IconMarginLeft = 0;
+            this.browse_Button.IconMarginRight = 0;
+            this.browse_Button.IconRightVisible = true;
+            this.browse_Button.IconRightZoom = 0D;
+            this.browse_Button.IconVisible = true;
+            this.browse_Button.IconZoom = 90D;
+            this.browse_Button.IsTab = false;
+            this.browse_Button.Location = new System.Drawing.Point(678, 446);
+            this.browse_Button.Margin = new System.Windows.Forms.Padding(5);
+            this.browse_Button.Name = "browse_Button";
+            this.browse_Button.Normalcolor = System.Drawing.Color.DarkCyan;
+            this.browse_Button.OnHovercolor = System.Drawing.Color.LightSeaGreen;
+            this.browse_Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.browse_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.browse_Button.selected = false;
+            this.browse_Button.Size = new System.Drawing.Size(223, 32);
+            this.browse_Button.TabIndex = 64;
+            this.browse_Button.Text = "BROWSE";
+            this.browse_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.browse_Button.Textcolor = System.Drawing.Color.White;
+            this.browse_Button.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.browse_Button.Click += new System.EventHandler(this.browse_Button_Click);
             // 
             // attachment_label
             // 
             this.attachment_label.AutoSize = true;
             this.attachment_label.BackColor = System.Drawing.Color.Transparent;
-            this.attachment_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.attachment_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.attachment_label.ForeColor = System.Drawing.Color.White;
             this.attachment_label.Location = new System.Drawing.Point(77, 446);
             this.attachment_label.Name = "attachment_label";
-            this.attachment_label.Size = new System.Drawing.Size(103, 18);
+            this.attachment_label.Size = new System.Drawing.Size(119, 18);
             this.attachment_label.TabIndex = 63;
             this.attachment_label.Text = "ATTACHMENT";
             // 
@@ -95,11 +136,11 @@
             // 
             this.body_label.AutoSize = true;
             this.body_label.BackColor = System.Drawing.Color.Transparent;
-            this.body_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.body_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.body_label.ForeColor = System.Drawing.Color.White;
             this.body_label.Location = new System.Drawing.Point(92, 179);
             this.body_label.Name = "body_label";
-            this.body_label.Size = new System.Drawing.Size(50, 18);
+            this.body_label.Size = new System.Drawing.Size(54, 18);
             this.body_label.TabIndex = 60;
             this.body_label.Text = "BODY";
             // 
@@ -107,11 +148,11 @@
             // 
             this.email_to_label.AutoSize = true;
             this.email_to_label.BackColor = System.Drawing.Color.Transparent;
-            this.email_to_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.email_to_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.email_to_label.ForeColor = System.Drawing.Color.White;
             this.email_to_label.Location = new System.Drawing.Point(92, 90);
             this.email_to_label.Name = "email_to_label";
-            this.email_to_label.Size = new System.Drawing.Size(27, 18);
+            this.email_to_label.Size = new System.Drawing.Size(31, 18);
             this.email_to_label.TabIndex = 59;
             this.email_to_label.Text = "TO";
             // 
@@ -119,11 +160,11 @@
             // 
             this.password_label.AutoSize = true;
             this.password_label.BackColor = System.Drawing.Color.Transparent;
-            this.password_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password_label.ForeColor = System.Drawing.Color.White;
             this.password_label.Location = new System.Drawing.Point(92, 53);
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(90, 18);
+            this.password_label.Size = new System.Drawing.Size(104, 18);
             this.password_label.TabIndex = 58;
             this.password_label.Text = "PASSWORD";
             // 
@@ -131,11 +172,11 @@
             // 
             this.subject_label.AutoSize = true;
             this.subject_label.BackColor = System.Drawing.Color.Transparent;
-            this.subject_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.subject_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.subject_label.ForeColor = System.Drawing.Color.White;
             this.subject_label.Location = new System.Drawing.Point(92, 138);
             this.subject_label.Name = "subject_label";
-            this.subject_label.Size = new System.Drawing.Size(68, 18);
+            this.subject_label.Size = new System.Drawing.Size(84, 18);
             this.subject_label.TabIndex = 56;
             this.subject_label.Text = "SUBJECT";
             // 
@@ -143,11 +184,11 @@
             // 
             this.email_label.AutoSize = true;
             this.email_label.BackColor = System.Drawing.Color.Transparent;
-            this.email_label.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.email_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.email_label.ForeColor = System.Drawing.Color.White;
             this.email_label.Location = new System.Drawing.Point(92, 22);
             this.email_label.Name = "email_label";
-            this.email_label.Size = new System.Drawing.Size(58, 18);
+            this.email_label.Size = new System.Drawing.Size(62, 18);
             this.email_label.TabIndex = 55;
             this.email_label.Text = "E-MAIL";
             // 
@@ -160,7 +201,7 @@
             this.send_email_button.ButtonText = "SEND";
             this.send_email_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.send_email_button.DisabledColor = System.Drawing.Color.Gray;
-            this.send_email_button.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.send_email_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.send_email_button.Iconcolor = System.Drawing.Color.Transparent;
             this.send_email_button.Iconimage = null;
             this.send_email_button.Iconimage_right = null;
@@ -315,5 +356,6 @@
         private System.Windows.Forms.TextBox file_attactment;
         private System.Windows.Forms.Label attachment_label;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Bunifu.Framework.UI.BunifuFlatButton browse_Button;
     }
 }
