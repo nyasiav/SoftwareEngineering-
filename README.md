@@ -1,3 +1,3 @@
 SoftwareEngineering 
 
-In order to run the application simply run the Connect-A-Bull.exe
+In order to run the application execute the Connect-A-Bull.exe
